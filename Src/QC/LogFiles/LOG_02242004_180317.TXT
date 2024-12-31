@@ -1,0 +1,111 @@
+02/24/2004:06:03:17PM:00000064.998:INFOR:Main,Setting startup drive to C:
+02/24/2004:06:03:17PM:00000064.998:INFOR:Main,Setting INI file to C:\DVP2_R2\Source\QC\DVP2_QC.ini
+02/24/2004:06:03:17PM:00000064.998:INFOR:Main,Setting Database Path to c:\DVP2_R2\Database\Settings.mdb
+02/24/2004:06:03:17PM:00000064.998:INFOR:Main,Setting Print Que Path to C:\DVP2_R2\PrintQue.mdb
+02/24/2004:06:03:17PM:00000064.998:INFOR:Main,Setting Printer Name to
+02/24/2004:06:03:17PM:00000064.998:INFOR:Main,Setting Settings Path to c:\DVP2_R2\DVP2 Printers\Default\
+02/24/2004:06:03:17PM:00000064.998:INFOR:Main,Setting Offset File Path to c:\DVP2_R2\DVP2 Printers\
+02/24/2004:06:03:17PM:00000064.998:INFOR:Main,Setting LUT File Path to c:\DVP2_R2\DVP2 Printers\
+02/24/2004:06:03:17PM:00000064.998:INFOR:ErrorForm:Form_Load,Loading Error Form...
+02/24/2004:06:03:17PM:00000064.998:INFOR:OpenDatabase,Connecting to Micrsoft Access Database using: Provider=Microsoft.Jet.OLEDB.4.0;Data Source=c:\DVP2_R2\Database\Settings.mdb;Persist Security Info=False
+02/24/2004:06:03:17PM:00000064.998:INFOR:OpenDatabase,Opening ADO Connection=Provider=Microsoft.Jet.OLEDB.4.0;Data Source=c:\DVP2_R2\Database\Settings.mdb;Persist Security Info=False
+02/24/2004:06:03:18PM:00000064.998:INFOR:OpenDatabase,Opening Printer List Recordset as SELECT * FROM PrinterList ORDER BY PrinterName
+02/24/2004:06:03:18PM:00000064.998:INFOR:OpenDatabase,Opening Printer Option Recordset as SELECT * FROM PrinterOptions WHERE PrinterName='Default' ORDER BY PrinterName,OptionNumber
+02/24/2004:06:03:18PM:00000064.998:INFOR:OpenDatabase,Opening Printer Settings Recordset as SELECT * FROM PrinterSettings WHERE PrinterName='Default' ORDER BY PrinterName,SettingNumber
+02/24/2004:06:03:18PM:00000064.998:INFOR:OpenDatabase,Opening Print Size Recordset as SELECT * FROM PrintSizes WHERE PrinterName='Default' ORDER BY PrinterName,PrintSize;
+02/24/2004:06:03:18PM:00000064.998:INFOR:OpenDatabase,Opening Input Recordset as SELECT * FROM DigitalInputs WHERE PrinterName='Default' ORDER BY PrinterName,InputNumber
+02/24/2004:06:03:18PM:00000064.998:INFOR:OpenDatabase,Opening Output Recordset as SELECT * FROM DigitalOutputs WHERE PrinterName='Default' ORDER BY PrinterName,OutputNumber
+02/24/2004:06:03:18PM:00000064.998:INFOR:OpenDatabase,Opening Exposure Time Recordset as SELECT * FROM ExposureTimes WHERE PrinterName='Default';
+02/24/2004:06:03:18PM:00000064.999:INFOR:OpenDatabase,Opening Exposure Time History Recordset as SELECT * FROM ExposureTimeHistory WHERE PrinterName='Default';
+02/24/2004:06:03:18PM:00000064.999:INFOR:OpenDatabase,Opening Hot Folder Recordset as SELECT PrinterName,HotFolderPath,FolderType,FolderEnabled,Status,NumberOfFiles FROM HotFolders WHERE PrinterName='Default'
+02/24/2004:06:03:18PM:00000064.999:INFOR:OpenDatabase,Opening Printer Statistics Recordset as SELECT * FROM PrinterStatistics WHERE PrinterName='Default' ORDER BY PrinterName,StatisticNumber;
+02/24/2004:06:03:18PM:00000064.999:INFOR:OpenDatabase,Opening Daily Calibration Recordset as SELECT * FROM DailyCalibration WHERE PrinterName='Default' ORDER BY PrinterName,BlockNum;
+02/24/2004:06:03:18PM:00000064.999:INFOR:OpenDatabase,Opening Ring Around Recordset as SELECT * FROM RingArounds WHERE PrinterName='Default' ORDER BY PrinterName,BlockNum;
+02/24/2004:06:03:18PM:00000064.999:INFOR:OpenDatabase,Opening Ring Around Recordset as SELECT * FROM RingAroundsAutoScan WHERE PrinterName='Default' ORDER BY PrinterName,BlockNum;
+02/24/2004:06:03:18PM:00000064.999:INFOR:OpenDatabase,Opening Offset Calibration Recordset as SELECT * FROM OffsetCalibrations WHERE PrinterName='Default' ORDER BY PrinterName,OffsetNum
+02/24/2004:06:03:18PM:00000064.999:INFOR:OpenDatabase,Opening Lut Calibration Recordset as SELECT * FROM LutCalibrations WHERE PrinterName='Default' ORDER BY PrinterName,LutNum
+02/24/2004:06:03:18PM:00000064.999:INFOR:OpenDatabase,Opening BackWriter Settings Recordset as SELECT * FROM PrinterSettings WHERE PrinterName='Default' AND SettingNumber>=10 AND SettingNumber<20 ORDER BY PrinterName,SettingNumber
+02/24/2004:06:03:18PM:00000064.999:INFOR:OpenDatabase,Opening Lead Tools Error Recordset as SELECT * FROM LeadErrorCodes
+02/24/2004:06:03:18PM:00000064.999:INFOR:OpenDatabase,Opening Lab Aim Recordset as SELECT * FROM LabAim
+02/24/2004:06:03:18PM:00000064.999:INFOR:OpenDatabase,Timed,.8312 seconds.
+02/24/2004:06:03:22PM:00000065.002:ERROR:MainForm,CommConnect,Could not open comm port.
+02/24/2004:06:03:29PM:00000065.009:INFOR:OpenDatabase,Opening Printer Option Recordset as SELECT * FROM PrinterOptions WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,OptionNumber
+02/24/2004:06:03:29PM:00000065.009:INFOR:OpenDatabase,Opening Printer Settings Recordset as SELECT * FROM PrinterSettings WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,SettingNumber
+02/24/2004:06:03:29PM:00000065.009:INFOR:OpenDatabase,Opening Print Size Recordset as SELECT * FROM PrintSizes WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,PrintSize;
+02/24/2004:06:03:29PM:00000065.009:INFOR:OpenDatabase,Opening Input Recordset as SELECT * FROM DigitalInputs WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,InputNumber
+02/24/2004:06:03:29PM:00000065.009:INFOR:OpenDatabase,Opening Output Recordset as SELECT * FROM DigitalOutputs WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,OutputNumber
+02/24/2004:06:03:29PM:00000065.009:INFOR:OpenDatabase,Opening Exposure Time Recordset as SELECT * FROM ExposureTimes WHERE PrinterName='DVP2_0001';
+02/24/2004:06:03:29PM:00000065.009:INFOR:OpenDatabase,Opening Exposure Time History Recordset as SELECT * FROM ExposureTimeHistory WHERE PrinterName='DVP2_0001';
+02/24/2004:06:03:29PM:00000065.009:INFOR:OpenDatabase,Opening Hot Folder Recordset as SELECT PrinterName,HotFolderPath,FolderType,FolderEnabled,Status,NumberOfFiles FROM HotFolders WHERE PrinterName='DVP2_0001'
+02/24/2004:06:03:29PM:00000065.009:INFOR:OpenDatabase,Opening Printer Statistics Recordset as SELECT * FROM PrinterStatistics WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,StatisticNumber;
+02/24/2004:06:03:29PM:00000065.009:INFOR:OpenDatabase,Opening Daily Calibration Recordset as SELECT * FROM DailyCalibration WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,BlockNum;
+02/24/2004:06:03:29PM:00000065.009:INFOR:OpenDatabase,Opening Ring Around Recordset as SELECT * FROM RingArounds WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,BlockNum;
+02/24/2004:06:03:29PM:00000065.009:INFOR:OpenDatabase,Opening Ring Around Recordset as SELECT * FROM RingAroundsAutoScan WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,BlockNum;
+02/24/2004:06:03:29PM:00000065.009:INFOR:OpenDatabase,Opening Offset Calibration Recordset as SELECT * FROM OffsetCalibrations WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,OffsetNum
+02/24/2004:06:03:29PM:00000065.009:INFOR:OpenDatabase,Opening Lut Calibration Recordset as SELECT * FROM LutCalibrations WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,LutNum
+02/24/2004:06:03:29PM:00000065.009:INFOR:OpenDatabase,Opening BackWriter Settings Recordset as SELECT * FROM PrinterSettings WHERE PrinterName='DVP2_0001' AND SettingNumber>=10 AND SettingNumber<20 ORDER BY PrinterName,SettingNumber
+02/24/2004:06:03:29PM:00000065.009:INFOR:OpenDatabase,Opening LUT Densitometer Values Recordset as SELECT * FROM LutDensitometerValues WHERE PrinterName='DVP2_0001' AND LutNum=8 ORDER BY PrinterName,BlockNum;
+02/24/2004:06:03:32PM:00000065.012:INFOR:OpenDatabase,Opening LUT Densitometer Values Recordset as SELECT * FROM LutDensitometerValues WHERE PrinterName='DVP2_0001' AND LutNum=6 ORDER BY PrinterName,BlockNum;
+02/24/2004:06:04:17PM:00000065.057:INFOR:OpenDatabase,Opening Printer Option Recordset as SELECT * FROM PrinterOptions WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,OptionNumber
+02/24/2004:06:04:17PM:00000065.057:INFOR:OpenDatabase,Opening Printer Settings Recordset as SELECT * FROM PrinterSettings WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,SettingNumber
+02/24/2004:06:04:17PM:00000065.057:INFOR:OpenDatabase,Opening Print Size Recordset as SELECT * FROM PrintSizes WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,PrintSize;
+02/24/2004:06:04:17PM:00000065.057:INFOR:OpenDatabase,Opening Input Recordset as SELECT * FROM DigitalInputs WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,InputNumber
+02/24/2004:06:04:17PM:00000065.057:INFOR:OpenDatabase,Opening Output Recordset as SELECT * FROM DigitalOutputs WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,OutputNumber
+02/24/2004:06:04:17PM:00000065.057:INFOR:OpenDatabase,Opening Exposure Time Recordset as SELECT * FROM ExposureTimes WHERE PrinterName='DVP2_0001';
+02/24/2004:06:04:17PM:00000065.057:INFOR:OpenDatabase,Opening Exposure Time History Recordset as SELECT * FROM ExposureTimeHistory WHERE PrinterName='DVP2_0001';
+02/24/2004:06:04:17PM:00000065.057:INFOR:OpenDatabase,Opening Hot Folder Recordset as SELECT PrinterName,HotFolderPath,FolderType,FolderEnabled,Status,NumberOfFiles FROM HotFolders WHERE PrinterName='DVP2_0001'
+02/24/2004:06:04:17PM:00000065.057:INFOR:OpenDatabase,Opening Printer Statistics Recordset as SELECT * FROM PrinterStatistics WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,StatisticNumber;
+02/24/2004:06:04:17PM:00000065.057:INFOR:OpenDatabase,Opening Daily Calibration Recordset as SELECT * FROM DailyCalibration WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,BlockNum;
+02/24/2004:06:04:17PM:00000065.057:INFOR:OpenDatabase,Opening Ring Around Recordset as SELECT * FROM RingArounds WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,BlockNum;
+02/24/2004:06:04:17PM:00000065.057:INFOR:OpenDatabase,Opening Ring Around Recordset as SELECT * FROM RingAroundsAutoScan WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,BlockNum;
+02/24/2004:06:04:17PM:00000065.057:INFOR:OpenDatabase,Opening Offset Calibration Recordset as SELECT * FROM OffsetCalibrations WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,OffsetNum
+02/24/2004:06:04:17PM:00000065.057:INFOR:OpenDatabase,Opening Lut Calibration Recordset as SELECT * FROM LutCalibrations WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,LutNum
+02/24/2004:06:04:17PM:00000065.057:INFOR:OpenDatabase,Opening BackWriter Settings Recordset as SELECT * FROM PrinterSettings WHERE PrinterName='DVP2_0001' AND SettingNumber>=10 AND SettingNumber<20 ORDER BY PrinterName,SettingNumber
+02/24/2004:06:04:18PM:00000065.059:INFOR:OpenDatabase,Opening Printer Option Recordset as SELECT * FROM PrinterOptions WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,OptionNumber
+02/24/2004:06:04:18PM:00000065.059:INFOR:OpenDatabase,Opening Printer Settings Recordset as SELECT * FROM PrinterSettings WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,SettingNumber
+02/24/2004:06:04:18PM:00000065.059:INFOR:OpenDatabase,Opening Print Size Recordset as SELECT * FROM PrintSizes WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,PrintSize;
+02/24/2004:06:04:18PM:00000065.059:INFOR:OpenDatabase,Opening Input Recordset as SELECT * FROM DigitalInputs WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,InputNumber
+02/24/2004:06:04:18PM:00000065.059:INFOR:OpenDatabase,Opening Output Recordset as SELECT * FROM DigitalOutputs WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,OutputNumber
+02/24/2004:06:04:18PM:00000065.059:INFOR:OpenDatabase,Opening Exposure Time Recordset as SELECT * FROM ExposureTimes WHERE PrinterName='DVP2_0001';
+02/24/2004:06:04:18PM:00000065.059:INFOR:OpenDatabase,Opening Exposure Time History Recordset as SELECT * FROM ExposureTimeHistory WHERE PrinterName='DVP2_0001';
+02/24/2004:06:04:18PM:00000065.059:INFOR:OpenDatabase,Opening Hot Folder Recordset as SELECT PrinterName,HotFolderPath,FolderType,FolderEnabled,Status,NumberOfFiles FROM HotFolders WHERE PrinterName='DVP2_0001'
+02/24/2004:06:04:18PM:00000065.059:INFOR:OpenDatabase,Opening Printer Statistics Recordset as SELECT * FROM PrinterStatistics WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,StatisticNumber;
+02/24/2004:06:04:18PM:00000065.059:INFOR:OpenDatabase,Opening Daily Calibration Recordset as SELECT * FROM DailyCalibration WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,BlockNum;
+02/24/2004:06:04:18PM:00000065.059:INFOR:OpenDatabase,Opening Ring Around Recordset as SELECT * FROM RingArounds WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,BlockNum;
+02/24/2004:06:04:18PM:00000065.059:INFOR:OpenDatabase,Opening Ring Around Recordset as SELECT * FROM RingAroundsAutoScan WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,BlockNum;
+02/24/2004:06:04:18PM:00000065.059:INFOR:OpenDatabase,Opening Offset Calibration Recordset as SELECT * FROM OffsetCalibrations WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,OffsetNum
+02/24/2004:06:04:18PM:00000065.059:INFOR:OpenDatabase,Opening Lut Calibration Recordset as SELECT * FROM LutCalibrations WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,LutNum
+02/24/2004:06:04:18PM:00000065.059:INFOR:OpenDatabase,Opening BackWriter Settings Recordset as SELECT * FROM PrinterSettings WHERE PrinterName='DVP2_0001' AND SettingNumber>=10 AND SettingNumber<20 ORDER BY PrinterName,SettingNumber
+02/24/2004:06:04:19PM:00000065.059:INFOR:MakeCalcFile,C:\DVP2_R2\Source\QC\FRMtoBMP.exe c:\DVP2_R2\DVP2 Printers\DVP2_0001\Offset\History\Offset4
+02/24/2004:06:04:22PM:00000065.063:INFOR:OpenDatabase,Opening Printer Option Recordset as SELECT * FROM PrinterOptions WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,OptionNumber
+02/24/2004:06:04:22PM:00000065.063:INFOR:OpenDatabase,Opening Printer Settings Recordset as SELECT * FROM PrinterSettings WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,SettingNumber
+02/24/2004:06:04:22PM:00000065.063:INFOR:OpenDatabase,Opening Print Size Recordset as SELECT * FROM PrintSizes WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,PrintSize;
+02/24/2004:06:04:22PM:00000065.063:INFOR:OpenDatabase,Opening Input Recordset as SELECT * FROM DigitalInputs WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,InputNumber
+02/24/2004:06:04:22PM:00000065.063:INFOR:OpenDatabase,Opening Output Recordset as SELECT * FROM DigitalOutputs WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,OutputNumber
+02/24/2004:06:04:22PM:00000065.063:INFOR:OpenDatabase,Opening Exposure Time Recordset as SELECT * FROM ExposureTimes WHERE PrinterName='DVP2_0001';
+02/24/2004:06:04:22PM:00000065.063:INFOR:OpenDatabase,Opening Exposure Time History Recordset as SELECT * FROM ExposureTimeHistory WHERE PrinterName='DVP2_0001';
+02/24/2004:06:04:22PM:00000065.063:INFOR:OpenDatabase,Opening Hot Folder Recordset as SELECT PrinterName,HotFolderPath,FolderType,FolderEnabled,Status,NumberOfFiles FROM HotFolders WHERE PrinterName='DVP2_0001'
+02/24/2004:06:04:22PM:00000065.063:INFOR:OpenDatabase,Opening Printer Statistics Recordset as SELECT * FROM PrinterStatistics WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,StatisticNumber;
+02/24/2004:06:04:22PM:00000065.063:INFOR:OpenDatabase,Opening Daily Calibration Recordset as SELECT * FROM DailyCalibration WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,BlockNum;
+02/24/2004:06:04:22PM:00000065.063:INFOR:OpenDatabase,Opening Ring Around Recordset as SELECT * FROM RingArounds WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,BlockNum;
+02/24/2004:06:04:22PM:00000065.063:INFOR:OpenDatabase,Opening Ring Around Recordset as SELECT * FROM RingAroundsAutoScan WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,BlockNum;
+02/24/2004:06:04:22PM:00000065.063:INFOR:OpenDatabase,Opening Offset Calibration Recordset as SELECT * FROM OffsetCalibrations WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,OffsetNum
+02/24/2004:06:04:22PM:00000065.063:INFOR:OpenDatabase,Opening Lut Calibration Recordset as SELECT * FROM LutCalibrations WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,LutNum
+02/24/2004:06:04:22PM:00000065.063:INFOR:OpenDatabase,Opening BackWriter Settings Recordset as SELECT * FROM PrinterSettings WHERE PrinterName='DVP2_0001' AND SettingNumber>=10 AND SettingNumber<20 ORDER BY PrinterName,SettingNumber
+02/24/2004:06:04:24PM:00000065.065:INFOR:OpenDatabase,Opening Printer Option Recordset as SELECT * FROM PrinterOptions WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,OptionNumber
+02/24/2004:06:04:24PM:00000065.065:INFOR:OpenDatabase,Opening Printer Settings Recordset as SELECT * FROM PrinterSettings WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,SettingNumber
+02/24/2004:06:04:24PM:00000065.065:INFOR:OpenDatabase,Opening Print Size Recordset as SELECT * FROM PrintSizes WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,PrintSize;
+02/24/2004:06:04:24PM:00000065.065:INFOR:OpenDatabase,Opening Input Recordset as SELECT * FROM DigitalInputs WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,InputNumber
+02/24/2004:06:04:24PM:00000065.065:INFOR:OpenDatabase,Opening Output Recordset as SELECT * FROM DigitalOutputs WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,OutputNumber
+02/24/2004:06:04:24PM:00000065.065:INFOR:OpenDatabase,Opening Exposure Time Recordset as SELECT * FROM ExposureTimes WHERE PrinterName='DVP2_0001';
+02/24/2004:06:04:24PM:00000065.065:INFOR:OpenDatabase,Opening Exposure Time History Recordset as SELECT * FROM ExposureTimeHistory WHERE PrinterName='DVP2_0001';
+02/24/2004:06:04:24PM:00000065.065:INFOR:OpenDatabase,Opening Hot Folder Recordset as SELECT PrinterName,HotFolderPath,FolderType,FolderEnabled,Status,NumberOfFiles FROM HotFolders WHERE PrinterName='DVP2_0001'
+02/24/2004:06:04:24PM:00000065.065:INFOR:OpenDatabase,Opening Printer Statistics Recordset as SELECT * FROM PrinterStatistics WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,StatisticNumber;
+02/24/2004:06:04:24PM:00000065.065:INFOR:OpenDatabase,Opening Daily Calibration Recordset as SELECT * FROM DailyCalibration WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,BlockNum;
+02/24/2004:06:04:24PM:00000065.065:INFOR:OpenDatabase,Opening Ring Around Recordset as SELECT * FROM RingArounds WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,BlockNum;
+02/24/2004:06:04:24PM:00000065.065:INFOR:OpenDatabase,Opening Ring Around Recordset as SELECT * FROM RingAroundsAutoScan WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,BlockNum;
+02/24/2004:06:04:24PM:00000065.065:INFOR:OpenDatabase,Opening Offset Calibration Recordset as SELECT * FROM OffsetCalibrations WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,OffsetNum
+02/24/2004:06:04:24PM:00000065.065:INFOR:OpenDatabase,Opening Lut Calibration Recordset as SELECT * FROM LutCalibrations WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,LutNum
+02/24/2004:06:04:24PM:00000065.065:INFOR:OpenDatabase,Opening BackWriter Settings Recordset as SELECT * FROM PrinterSettings WHERE PrinterName='DVP2_0001' AND SettingNumber>=10 AND SettingNumber<20 ORDER BY PrinterName,SettingNumber
+02/24/2004:06:04:24PM:00000065.065:INFOR:MakeCalcFile,C:\DVP2_R2\Source\QC\FRMtoBMP.exe c:\DVP2_R2\DVP2 Printers\DVP2_0001\Offset\History\Offset4
+02/24/2004:06:04:33PM:00000065.073:INFOR:ErrorForm:Form_Unload,UnLoading Error Form...

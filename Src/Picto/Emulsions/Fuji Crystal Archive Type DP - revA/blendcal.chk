@@ -1,0 +1,8 @@
+#
+# convergence required for blend calibration
+#  for Fuji type DP - revA
+# initial value for highlights
+# final value for shadows
+#
+initial_limit=0.02
+final_limit=0.04

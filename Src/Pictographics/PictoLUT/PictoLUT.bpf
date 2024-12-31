@@ -1,0 +1,7 @@
+USEUNIT("PictoLUT.cpp");
+USELIB("GrayBalLibX.lib");
+USE("GrayBalLib.dll", File);
+//---------------------------------------------------------------------------
+This file is used by the project manager only and should be treated like the project file
+
+main

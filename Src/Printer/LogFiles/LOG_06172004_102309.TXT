@@ -1,0 +1,470 @@
+06/17/2004:10:23:09AM:00000037.389:INFOR:ReadIniFile,Starting application in C:\DVP2_R3\Source\Printer
+06/17/2004:10:23:09AM:00000037.389:INFOR:ReadIniFile,Setting startup drive to C:
+06/17/2004:10:23:09AM:00000037.389:INFOR:ReadIniFile,Setting INI file to C:\DVP2_R3\Source\Printer\DVP2.ini
+06/17/2004:10:23:09AM:00000037.389:INFOR:ReadIniFile,Setting Database Path to c:\DVP2_R3\Database\Settings.mdb
+06/17/2004:10:23:09AM:00000037.389:INFOR:ReadIniFile,Setting Print Que Path to c:\DVP2_R3\DVP2_Printers\DVP2_0001\Database\PrintQue.mdb
+06/17/2004:10:23:09AM:00000037.389:INFOR:ReadIniFile,Setting Printer Name to DVP2_0001
+06/17/2004:10:23:09AM:00000037.389:INFOR:ReadIniFile,Setting Settings Path to c:\DVP2_R3\DVP2_Printers\DVP2_0001\
+06/17/2004:10:23:09AM:00000037.389:INFOR:ErrorForm:Form_Load,Loading Error Form...
+06/17/2004:10:23:09AM:00000037.389:INFOR:UsbKeyDiagnostics,Getting application security mode from hardware dongle.
+06/17/2004:10:23:09AM:00000037.389:INFOR:UsbKeyDiagnostics,FormatPacket,0
+06/17/2004:10:23:09AM:00000037.389:INFOR:UsbKeyDiagnostics,Initialize,0
+06/17/2004:10:23:09AM:00000037.389:INFOR:UsbKeyDiagnostics,FindFirstUnit,0
+06/17/2004:10:23:09AM:00000037.389:INFOR:UsbKeyDiagnostics,Found and validated dongle.
+06/17/2004:10:23:09AM:00000037.389:INFOR:UsbKeyDiagnostics,Timed, .0931 seconds.
+06/17/2004:10:23:09AM:00000037.389:INFOR:CompactDatabase,Compacting c:\DVP2_R3\DVP2_Printers\DVP2_0001\Database\PrintQue.mdb
+06/17/2004:10:23:09AM:00000037.389:INFOR:CompactDatabase,Timed,.0203
+06/17/2004:10:23:09AM:00000037.389:INFOR:OpenDatabase,Opening ADO Connection=Provider=Microsoft.Jet.OLEDB.4.0;Data Source=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Database\PrintQue.mdb;Persist Security Info=False
+06/17/2004:10:23:09AM:00000037.389:INFOR:OpenDatabase,Opening Printer Queue Recordset as SELECT * FROM ActivePrintQue WHERE PrinterName='DVP2_0001';
+06/17/2004:10:23:09AM:00000037.389:INFOR:OpenDatabase,Opening File Error Recordset as SELECT * FROM FileErrors WHERE PrinterName='DVP2_0001';
+06/17/2004:10:23:09AM:00000037.389:INFOR:OpenDatabase,Opening Print History Recordset as SELECT * FROM PrintHistory WHERE PrinterName='DVP2_0001';
+06/17/2004:10:23:09AM:00000037.389:INFOR:OpenDatabase,Connecting to Micrsoft Access Database using: Provider=Microsoft.Jet.OLEDB.4.0;Data Source=c:\DVP2_R3\Database\Settings.mdb;Persist Security Info=true
+06/17/2004:10:23:09AM:00000037.389:INFOR:OpenDatabase,Opening ADO Connection=Provider=Microsoft.Jet.OLEDB.4.0;Data Source=c:\DVP2_R3\Database\Settings.mdb;Persist Security Info=true
+06/17/2004:10:23:09AM:00000037.389:INFOR:OpenDatabase,Opening Printer List Recordset as SELECT * FROM PrinterList ORDER BY PrinterName
+06/17/2004:10:23:09AM:00000037.389:INFOR:OpenDatabase,Opening Printer Option Recordset as SELECT * FROM PrinterOptions WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,OptionNumber
+06/17/2004:10:23:09AM:00000037.389:INFOR:OpenDatabase,Opening Printer Settings Recordset as SELECT * FROM PrinterSettings WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,SettingNumber
+06/17/2004:10:23:09AM:00000037.389:INFOR:OpenDatabase,Opening Print Size Recordset as SELECT * FROM PrintSizes WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,PrintSize;
+06/17/2004:10:23:09AM:00000037.389:INFOR:OpenDatabase,Opening Input Recordset as SELECT * FROM DigitalInputs WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,InputNumber
+06/17/2004:10:23:09AM:00000037.389:INFOR:OpenDatabase,Opening Output Recordset as SELECT * FROM DigitalOutputs WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,OutputNumber
+06/17/2004:10:23:09AM:00000037.389:INFOR:OpenDatabase,Opening Exposure Time Recordset as SELECT * FROM ExposureTimes WHERE PrinterName='DVP2_0001';
+06/17/2004:10:23:09AM:00000037.389:INFOR:OpenDatabase,Opening Exposure Time History Recordset as SELECT * FROM ExposureTimeHistory WHERE PrinterName='DVP2_0001';
+06/17/2004:10:23:09AM:00000037.389:INFOR:OpenDatabase,Opening Hot Folder Recordset as SELECT PrinterName,HotFolderPath,FolderType,FolderEnabled,Status,NumberOfFiles FROM HotFolders WHERE PrinterName='DVP2_0001'
+06/17/2004:10:23:09AM:00000037.389:INFOR:OpenDatabase,Opening Printer Statistics Recordset as SELECT * FROM PrinterStatistics WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,StatisticNumber;
+06/17/2004:10:23:09AM:00000037.389:INFOR:OpenDatabase,Opening Daily Calibration Recordset as SELECT * FROM DailyCalibration WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,BlockNum;
+06/17/2004:10:23:09AM:00000037.389:INFOR:OpenDatabase,Opening Ring Around Recordset as SELECT * FROM RingArounds WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,BlockNum;
+06/17/2004:10:23:09AM:00000037.389:INFOR:OpenDatabase,Opening Ring Around Recordset as SELECT * FROM RingAroundsAutoScan WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,BlockNum;
+06/17/2004:10:23:09AM:00000037.389:INFOR:OpenDatabase,Opening Offset Calibration Recordset as SELECT * FROM OffsetCalibrations WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,OffsetNum
+06/17/2004:10:23:09AM:00000037.389:INFOR:OpenDatabase,Opening Lut Calibration Recordset as SELECT * FROM LutCalibrations WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,LutNum
+06/17/2004:10:23:09AM:00000037.389:INFOR:OpenDatabase,Opening BackWriter Settings Recordset as SELECT * FROM PrinterSettings WHERE PrinterName='DVP2_0001' AND SettingNumber>=10 AND SettingNumber<20 ORDER BY PrinterName,SettingNumber
+06/17/2004:10:23:09AM:00000037.390:INFOR:OpenDatabase,Opening Emulsion Recordset as SELECT * FROM PaperEmulsions;
+06/17/2004:10:23:09AM:00000037.390:INFOR:OpenDatabase,Opening Emulsion Data Recordset as SELECT * FROM PaperEmulsionData WHERE EmulsionNumber=1 ORDER BY EmulsionNumber,DensityNumber;
+06/17/2004:10:23:09AM:00000037.390:INFOR:OpenDatabase,Opening Lead Tools Error Recordset as SELECT * FROM LeadErrorCodes
+06/17/2004:10:23:09AM:00000037.390:INFOR:OpenDatabase,Opening Lab Aim Recordset as SELECT * FROM LabAim
+06/17/2004:10:23:09AM:00000037.390:INFOR:OpenDatabase,Timed,.1059 seconds.
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerOption,1,Debug Mode,True
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerOption,2,Stepper Mask Installed,True
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerOption,3,Daylight Load,True
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerOption,4,Single Backwriter Installed,False
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerOption,5,Dual Backwriter Installed,True
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerOption,6,Single Punch Installed,True
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerOption,7,Package Punch Installed,False
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerOption,9,Platen Cylinder Installed,False
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerOption,8,RS-422 Motor Configuration,True
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerOption,9,Platen Cylinder Installed,False
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerOption,10,Render Queue - Get Quantity From File Name,True
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerOption,11,Render Queue - Get Punch Code From File Name,False
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerOption,12,Render Queue - Get BackWriter Text from File Name,True
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerOption,13,Render Queue - Sort By File Name,False
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerOption,14,Render Queue - Fuji File Naming,True
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerOption,15,Use Fixed BackWriter Text From Maintenance Screen,False
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerOption,20,Apply Gray Borders on LCD Image,True
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerOption,21,Apply MullerSOHN LUT,True
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerOption,22,Apply Pictographics LUT,False
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerOption,30,Render Digital Cut Code,False
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerOption,40,Enable Q.C. in Printer Console,True
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerOption,41,Enable Print Queue History,True
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerSetting,1,Calibration File Path,C:\DVP2\Calibration Images
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerSetting,2,Log File Path,C:\DVP2\Log Files
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerSetting,3,RAM Disk Path,S:
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerSetting,4,Administrative Password,
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerSetting,5,Paper Advance Motor PPI,236
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerSetting,6,Paper Advance Manual Length,10
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerSetting,7,Paper Advance TearOff Length,40
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerSetting,8,Quality Control Password,
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerSetting,10,BackWriter Text 1,Luck Color Lab
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerSetting,11,BackWriter Text 2,Printed on DVP-2
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerSetting,12,Character Delay,1000
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerSetting,13,Dot On Time,350
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerSetting,14,Dot Off Time,500
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerSetting,15,Maximum # Characters,50
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerSetting,16,Delay from start of advance,0
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerSetting,17,Ribbon Motor Speed,200
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerSetting,18,Character Height (dots),7
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerSetting,19,Wait for stepper motor input,Yes
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerSetting,30,Stepper Mask Home Every # Prints,0
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerSetting,31,Stepper Mask Steps on Button Click,500
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerSetting,32,Stepper Mask Left Limit,-225000
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerSetting,33,Stepper Mask Right Limit,74000
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerSetting,34,Stepper Mask Holding Torque (%, Max=60),50
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerSetting,40,Punch Solenoid Enable Time (ms),5
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerSetting,41,Punch Engage Time (ms),50
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerSetting,42,Punch Disengage Time (ms),50
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerSetting,43,Punch Pkg Extend Time (ms),100
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerSetting,50,Digital Cut Code Size (Pixels),16
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerSetting,51,Digital Cut Code 8x10 Pixels From Left Edge,0
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerSetting,52,Digital Cut Code 11x14 Pixels From Top Edge,0
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerSetting,60,Purge log files after # days,30
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerSetting,61,Purge exposure time history after # days,30
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetServerSetting,62,Purge print queue history after # days,30
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetStatistic,Retrieved 1 Name=Total Images
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetStatistic,Retrieved 2 Name=Total Exposures
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetStatistic,Retrieved 3 Name=Exposures/Second
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetStatistic,Retrieved 4 Name=Average Exposure Time (Sec.)
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetStatistic,Retrieved 5 Name=Average Server Time (Sec.)
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetStatistic,Retrieved 6 Name=Average Advance Time (Sec.)
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetStatistic,Retrieved 7 Name=Time Running (Hrs.)
+06/17/2004:10:23:09AM:00000037.390:INFOR:GetStatistic,Retrieved 8 Name=Paper Used (ft.)
+06/17/2004:10:23:09AM:00000037.390:INFOR:CopySettingsFolder,Using Hard Disk for temporary files, RAMDISK is not formatted,Folder=c:\DVP2_R3\DVP2_Printers\DVP2_0001\
+06/17/2004:10:23:09AM:00000037.390:INFOR:CopySettingsFolder,Timed,.0005 seconds.
+06/17/2004:10:23:09AM:00000037.390:INFOR:OpenDatabase,Opening Emulsion Data Recordset as SELECT * FROM PaperEmulsionData WHERE EmulsionNumber=1 ORDER BY EmulsionNumber,DensityNumber;
+06/17/2004:10:23:09AM:00000037.390:INFOR:OpenDatabase,Opening LUT Densitometer Values Recordset as SELECT * FROM LutDensitometerValues WHERE PrinterName='DVP2_0001' AND LutNum=2 ORDER BY PrinterName,BlockNum;
+06/17/2004:10:23:09AM:00000037.390:INFOR:InitializeHardware,Connecting to Panel...
+06/17/2004:10:23:10AM:00000037.391:INFOR:InitializeHardware,Setting LCD Output Device to \\.\Display2
+06/17/2004:10:23:10AM:00000037.391:INFOR:InitializeHardware,Opening LCD device...
+06/17/2004:10:23:10AM:00000037.391:INFOR:InitializeHardware,Timed,.9035 seconds.
+06/17/2004:10:23:10AM:00000037.391:INFOR:InitializeHardware,Connecting to Motors...
+06/17/2004:10:23:10AM:00000037.391:INFOR:InitializeHardware,Connecting to devices using RS-422 configuration.
+06/17/2004:10:23:10AM:00000037.391:INFOR:CommConnect,Opened Index 0,Port 1,Settings 9600,N,8,1
+06/17/2004:10:23:11AM:00000037.391:DEBUG:InitializeStepperMask,Sending stepper mask motor parameters via RS-422...
+06/17/2004:10:23:13AM:00000037.394:DEBUG:PaperMaskHome,Sending motors home via RS-422...
+06/17/2004:10:23:14AM:00000037.394:DEBUG:WaitForPaperMask,Timed,.2698 seconds.
+06/17/2004:10:23:16AM:00000037.396:DEBUG:WaitForPaperMask,Timed,1.8609 seconds.
+06/17/2004:10:23:16AM:00000037.396:DEBUG:InitializePaperAdvance,Sending paper advance motor parameters...
+06/17/2004:10:23:17AM:00000037.397:INFOR:CommConnect,Opened Port 2,Settings 38400,n,8,1
+06/17/2004:10:23:18AM:00000037.399:INFOR:PrepareToPrintImage,Configuring,c:\DVP2_R3\DVP2_Printers\DVP2_0001\Images\DVP2_Gray.psd,Calibration,Advance=False
+06/17/2004:10:23:18AM:00000037.399:DEBUG:PrepareToPrintImage,Not making paper advance.
+06/17/2004:10:23:19AM:00000037.399:DEBUG:WaitForPaperMask,Timed,.5031 seconds.
+06/17/2004:10:23:19AM:00000037.399:DEBUG:ProcessImage,Loading & processing bitmap image.
+06/17/2004:10:23:19AM:00000037.400:DEBUG:ProcessImage,Combining bitmap images...
+06/17/2004:10:23:19AM:00000037.400:DEBUG:ProcessImage,Setting caption text to: L=100,T=0,W=3200,H=48,Angle=0,Font=Arial,Size=24,Bold=False,Italic=False,Underline=False,Text=[06/17/2004 10:23:19AM c:\DVP2_R3\DVP2_Printers\DVP2_0001\Images\DVP2_Gray.psd, Red=738, Grn=1123, Blu=1159, Crop L=0, T=0, B=2400, R=3200],
+06/17/2004:10:23:20AM:00000037.401:DEBUG:ProcessImage,Timed,1.3462
+06/17/2004:10:23:21AM:00000037.402:DEBUG:CalculateExposures,Calculating red exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutr.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetr.frm
+06/17/2004:10:23:21AM:00000037.402:DEBUG:CalculateExposures,Calculating green exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutg.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetg.frm
+06/17/2004:10:23:21AM:00000037.402:DEBUG:CalculateExposures,Calculating blue exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutb.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetb.frm
+06/17/2004:10:23:22AM:00000037.402:DEBUG:CheckForInput,8x10 Lens Engaged,Timed,.0188
+06/17/2004:10:23:22AM:00000037.402:DEBUG:CheckForInput,LCD Rotated,Timed,.0011
+06/17/2004:10:23:22AM:00000037.402:DEBUG:PrepareToPrintImage,Timed,3.3321 seconds.
+06/17/2004:10:23:22AM:00000037.402:DEBUG:ClearImage,Outputting clear image to LCD
+06/17/2004:10:23:22AM:00000037.402:INFOR:PrintQue:Setup,configuring grid controls
+06/17/2004:10:23:22AM:00000037.402:INFOR:PrintQue:Setup,Starting Que Timer...
+06/17/2004:10:23:22AM:00000037.402:DEBUG:Form_Activate,Opened densitometer serial port on comm 3
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerOption,1,Debug Mode,True
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerOption,2,Stepper Mask Installed,True
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerOption,3,Daylight Load,True
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerOption,4,Single Backwriter Installed,False
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerOption,5,Dual Backwriter Installed,True
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerOption,6,Single Punch Installed,True
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerOption,7,Package Punch Installed,False
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerOption,9,Platen Cylinder Installed,False
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerOption,8,RS-422 Motor Configuration,True
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerOption,9,Platen Cylinder Installed,False
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerOption,10,Render Queue - Get Quantity From File Name,True
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerOption,11,Render Queue - Get Punch Code From File Name,False
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerOption,12,Render Queue - Get BackWriter Text from File Name,True
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerOption,13,Render Queue - Sort By File Name,False
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerOption,14,Render Queue - Fuji File Naming,True
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerOption,15,Use Fixed BackWriter Text From Maintenance Screen,False
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerOption,20,Apply Gray Borders on LCD Image,True
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerOption,21,Apply MullerSOHN LUT,False
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerOption,22,Apply Pictographics LUT,True
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerOption,30,Render Digital Cut Code,False
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerOption,40,Enable Q.C. in Printer Console,True
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerOption,41,Enable Print Queue History,True
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerSetting,1,Calibration File Path,C:\DVP2\Calibration Images
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerSetting,2,Log File Path,C:\DVP2\Log Files
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerSetting,3,RAM Disk Path,S:
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerSetting,4,Administrative Password,
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerSetting,5,Paper Advance Motor PPI,236
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerSetting,6,Paper Advance Manual Length,10
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerSetting,7,Paper Advance TearOff Length,40
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerSetting,8,Quality Control Password,
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerSetting,10,BackWriter Text 1,Luck Color Lab
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerSetting,11,BackWriter Text 2,Printed on DVP-2
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerSetting,12,Character Delay,1000
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerSetting,13,Dot On Time,350
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerSetting,14,Dot Off Time,500
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerSetting,15,Maximum # Characters,50
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerSetting,16,Delay from start of advance,0
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerSetting,17,Ribbon Motor Speed,200
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerSetting,18,Character Height (dots),7
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerSetting,19,Wait for stepper motor input,Yes
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerSetting,30,Stepper Mask Home Every # Prints,0
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerSetting,31,Stepper Mask Steps on Button Click,500
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerSetting,32,Stepper Mask Left Limit,-225000
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerSetting,33,Stepper Mask Right Limit,74000
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerSetting,34,Stepper Mask Holding Torque (%, Max=60),50
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerSetting,40,Punch Solenoid Enable Time (ms),5
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerSetting,41,Punch Engage Time (ms),50
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerSetting,42,Punch Disengage Time (ms),50
+06/17/2004:10:23:44AM:00000037.424:INFOR:GetServerSetting,43,Punch Pkg Extend Time (ms),100
+06/17/2004:10:23:44AM:00000037.425:INFOR:GetServerSetting,50,Digital Cut Code Size (Pixels),16
+06/17/2004:10:23:44AM:00000037.425:INFOR:GetServerSetting,51,Digital Cut Code 8x10 Pixels From Left Edge,0
+06/17/2004:10:23:44AM:00000037.425:INFOR:GetServerSetting,52,Digital Cut Code 11x14 Pixels From Top Edge,0
+06/17/2004:10:23:44AM:00000037.425:INFOR:GetServerSetting,60,Purge log files after # days,30
+06/17/2004:10:23:44AM:00000037.425:INFOR:GetServerSetting,61,Purge exposure time history after # days,30
+06/17/2004:10:23:44AM:00000037.425:INFOR:GetServerSetting,62,Purge print queue history after # days,30
+06/17/2004:10:23:50AM:00000037.430:DEBUG:CheckForInput,Right Pan Shutter Open,Timed,.5973
+06/17/2004:10:23:50AM:00000037.430:INFOR:MakeExposure,Starting Exposure,c:\DVP2_R3\DVP2_Printers\DVP2_0001\Images\DVP2_LUT_Picto_Calibration.psd,Calibration
+06/17/2004:10:23:50AM:00000037.430:INFOR:PrepareToPrintImage,Configuring,c:\DVP2_R3\DVP2_Printers\DVP2_0001\Images\DVP2_LUT_Picto_Calibration.psd,Calibration,Advance=True
+06/17/2004:10:23:50AM:00000037.430:DEBUG:PrepareToPrintImage,No Last Size Defined!
+06/17/2004:10:23:50AM:00000037.431:DEBUG:WaitForPaperMask,Timed,.2658 seconds.
+06/17/2004:10:23:50AM:00000037.431:DEBUG:ProcessImage,Loading & processing bitmap image.
+06/17/2004:10:23:50AM:00000037.431:DEBUG:ProcessImage,Combining bitmap images...
+06/17/2004:10:23:52AM:00000037.432:DEBUG:ProcessImage,Timed,1.3358
+06/17/2004:10:23:52AM:00000037.432:DEBUG:CalculateExposures,Calculating red exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutr.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetr.frm
+06/17/2004:10:23:52AM:00000037.432:DEBUG:CalculateExposures,Calculating green exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutg.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetg.frm
+06/17/2004:10:23:52AM:00000037.432:DEBUG:CalculateExposures,Calculating blue exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutb.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetb.frm
+06/17/2004:10:23:52AM:00000037.433:DEBUG:WaitForPaperAdvance,Timed,.0907
+06/17/2004:10:23:52AM:00000037.433:DEBUG:PrepareToPrintImage,Punching paper...
+06/17/2004:10:23:52AM:00000037.433:DEBUG:Punching Code=1
+06/17/2004:10:23:53AM:00000037.433:DEBUG:MakePunch,Code= 1,Timed,.3571 seconds.
+06/17/2004:10:23:53AM:00000037.433:DEBUG:CheckForInput,8x10 Lens Engaged,Timed,.0012
+06/17/2004:10:23:53AM:00000037.433:DEBUG:CheckForInput,LCD Rotated,Timed,.0011
+06/17/2004:10:23:53AM:00000037.433:DEBUG:PrepareToPrintImage,Timed,2.7048 seconds.
+06/17/2004:10:23:53AM:00000037.433:DEBUG:WaitForPaperMask,Timed,.2652 seconds.
+06/17/2004:10:23:53AM:00000037.433:DEBUG:WaitForPaperAdvance,Timed,.0931
+06/17/2004:10:23:53AM:00000037.433:DEBUG:ExposeImage,Quadrant Exposure Times R=184, G=281, B=290
+06/17/2004:10:23:53AM:00000037.433:DEBUG:CheckForInput,Right Pan Shutter Open,Timed,.0012
+06/17/2004:10:23:53AM:00000037.434:DEBUG:AllFiltersOn,Enabling 24v on all Filters (Bi-Level Hi)
+06/17/2004:10:23:53AM:00000037.434:DEBUG:AllFiltersOn,Enabling 12v on all Filters (Bi-Level Lo)
+06/17/2004:10:23:53AM:00000037.434:DEBUG:AllFiltersOn,Disabling 24v on all Filters (Bi-Level OFF)
+06/17/2004:10:23:53AM:00000037.434:DEBUG:AllFiltersOn,Timed,.0254 seconds.
+06/17/2004:10:23:53AM:00000037.434:DEBUG:MakeColor,Setting RED by disabling Cyan.
+06/17/2004:10:23:53AM:00000037.434:DEBUG:CheckForInput,IRIS Shutter Open,Timed,.1067
+06/17/2004:10:23:54AM:00000037.434:DEBUG:ExposeColor,Timed,.8118,ExpTime,736
+06/17/2004:10:23:54AM:00000037.434:DEBUG:AllFiltersOn,Enabling 24v on all Filters (Bi-Level Hi)
+06/17/2004:10:23:54AM:00000037.435:DEBUG:AllFiltersOn,Enabling 12v on all Filters (Bi-Level Lo)
+06/17/2004:10:23:54AM:00000037.435:DEBUG:AllFiltersOn,Disabling 24v on all Filters (Bi-Level OFF)
+06/17/2004:10:23:54AM:00000037.435:DEBUG:AllFiltersOn,Timed,.0321 seconds.
+06/17/2004:10:23:54AM:00000037.435:DEBUG:MakeColor,Setting GREEN by disabling Magenta.
+06/17/2004:10:23:55AM:00000037.436:DEBUG:ExposeColor,Timed,1.1857,ExpTime,1124
+06/17/2004:10:23:55AM:00000037.436:DEBUG:AllFiltersOn,Enabling 24v on all Filters (Bi-Level Hi)
+06/17/2004:10:23:55AM:00000037.436:DEBUG:AllFiltersOn,Enabling 12v on all Filters (Bi-Level Lo)
+06/17/2004:10:23:55AM:00000037.436:DEBUG:AllFiltersOn,Disabling 24v on all Filters (Bi-Level OFF)
+06/17/2004:10:23:55AM:00000037.436:DEBUG:AllFiltersOn,Timed,.0324 seconds.
+06/17/2004:10:23:55AM:00000037.436:DEBUG:MakeColor,Setting BLUE by disabling Yellow.
+06/17/2004:10:23:56AM:00000037.437:DEBUG:ExposeColor,Timed,1.2482,ExpTime,1160
+06/17/2004:10:23:57AM:00000037.437:DEBUG:CheckForInput,IRIS Shutter Open,Timed,.0147
+06/17/2004:10:23:57AM:00000037.437:DEBUG:ExposeImage,Timed,3.6081 seconds.
+06/17/2004:10:23:57AM:00000037.437:DEBUG:MakeExposure,Timed,6.674
+06/17/2004:10:23:57AM:00000037.437:DEBUG:CheckForInput,Right Pan Shutter Open,Timed,.091
+06/17/2004:10:23:57AM:00000037.437:INFOR:PrepareToPrintImage,Configuring,c:\DVP2_R3\DVP2_Printers\DVP2_0001\Images\DVP2_Gray.psd,Calibration,Advance=False
+06/17/2004:10:23:57AM:00000037.437:DEBUG:PrepareToPrintImage,Not making paper advance.
+06/17/2004:10:23:57AM:00000037.437:DEBUG:WaitForPaperMask,Timed,.2694 seconds.
+06/17/2004:10:23:57AM:00000037.438:DEBUG:ProcessImage,Loading & processing bitmap image.
+06/17/2004:10:23:57AM:00000037.438:DEBUG:ProcessImage,Combining bitmap images...
+06/17/2004:10:23:58AM:00000037.439:DEBUG:ProcessImage,Timed,1.1661
+06/17/2004:10:23:58AM:00000037.439:DEBUG:CalculateExposures,Calculating red exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutr.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetr.frm
+06/17/2004:10:23:58AM:00000037.439:DEBUG:CalculateExposures,Calculating green exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutg.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetg.frm
+06/17/2004:10:23:59AM:00000037.439:DEBUG:CalculateExposures,Calculating blue exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutb.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetb.frm
+06/17/2004:10:23:59AM:00000037.439:DEBUG:CheckForInput,8x10 Lens Engaged,Timed,.0012
+06/17/2004:10:23:59AM:00000037.439:DEBUG:CheckForInput,LCD Rotated,Timed,.0011
+06/17/2004:10:23:59AM:00000037.439:DEBUG:PrepareToPrintImage,Timed,2.0477 seconds.
+06/17/2004:10:23:59AM:00000037.439:DEBUG:ClearImage,Outputting clear image to LCD
+06/17/2004:10:24:01AM:00000037.442:DEBUG:CheckForInput,Right Pan Shutter Open,Timed,.5761
+06/17/2004:10:24:01AM:00000037.442:INFOR:MakeExposure,Starting Exposure,c:\DVP2_R3\DVP2_Printers\DVP2_0001\Images\DVP2_LUT_Picto_Calibration.psd,Calibration
+06/17/2004:10:24:01AM:00000037.442:INFOR:PrepareToPrintImage,Configuring,c:\DVP2_R3\DVP2_Printers\DVP2_0001\Images\DVP2_LUT_Picto_Calibration.psd,Calibration,Advance=True
+06/17/2004:10:24:01AM:00000037.442:DEBUG:PrepareToPrintImage,Advancing Paper,LastSize=Calibration,CurAdv=14.5,PreAdv=0,PunchDist=0,MarkReq=No,Text=
+06/17/2004:10:24:01AM:00000037.442:DEBUG:PrepareToPrintImage,Advancing 14.5 inches
+06/17/2004:10:24:01AM:00000037.442:DEBUG:WaitForPaperAdvance,Timed,.0927
+06/17/2004:10:24:01AM:00000037.442:DEBUG:AdvancePaper,Backwriting not required.
+06/17/2004:10:24:02AM:00000037.442:DEBUG:WaitForPaperMask,Timed,.2695 seconds.
+06/17/2004:10:24:02AM:00000037.442:DEBUG:ProcessImage,Loading & processing bitmap image.
+06/17/2004:10:24:02AM:00000037.443:DEBUG:ProcessImage,Combining bitmap images...
+06/17/2004:10:24:03AM:00000037.444:DEBUG:ProcessImage,Timed,1.2983
+06/17/2004:10:24:03AM:00000037.444:DEBUG:CalculateExposures,Calculating red exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutr.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetr.frm
+06/17/2004:10:24:03AM:00000037.444:DEBUG:CalculateExposures,Calculating green exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutg.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetg.frm
+06/17/2004:10:24:04AM:00000037.444:DEBUG:CalculateExposures,Calculating blue exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutb.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetb.frm
+06/17/2004:10:24:04AM:00000037.444:DEBUG:WaitForPaperAdvance,Timed,.0886
+06/17/2004:10:24:04AM:00000037.444:DEBUG:PrepareToPrintImage,Punching paper...
+06/17/2004:10:24:04AM:00000037.444:DEBUG:Punching Code=1
+06/17/2004:10:24:04AM:00000037.445:DEBUG:MakePunch,Code= 1,Timed,.3567 seconds.
+06/17/2004:10:24:04AM:00000037.445:DEBUG:CheckForInput,8x10 Lens Engaged,Timed,.0012
+06/17/2004:10:24:04AM:00000037.445:DEBUG:CheckForInput,LCD Rotated,Timed,.0011
+06/17/2004:10:24:04AM:00000037.445:DEBUG:PrepareToPrintImage,Timed,3.0329 seconds.
+06/17/2004:10:24:04AM:00000037.445:DEBUG:WaitForPaperMask,Timed,.2658 seconds.
+06/17/2004:10:24:04AM:00000037.445:DEBUG:WaitForPaperAdvance,Timed,.0923
+06/17/2004:10:24:04AM:00000037.445:DEBUG:ExposeImage,Quadrant Exposure Times R=184, G=281, B=290
+06/17/2004:10:24:04AM:00000037.445:DEBUG:CheckForInput,Right Pan Shutter Open,Timed,.0012
+06/17/2004:10:24:05AM:00000037.445:DEBUG:AllFiltersOn,Enabling 24v on all Filters (Bi-Level Hi)
+06/17/2004:10:24:05AM:00000037.445:DEBUG:AllFiltersOn,Enabling 12v on all Filters (Bi-Level Lo)
+06/17/2004:10:24:05AM:00000037.445:DEBUG:AllFiltersOn,Disabling 24v on all Filters (Bi-Level OFF)
+06/17/2004:10:24:05AM:00000037.445:DEBUG:AllFiltersOn,Timed,.0258 seconds.
+06/17/2004:10:24:05AM:00000037.445:DEBUG:MakeColor,Setting RED by disabling Cyan.
+06/17/2004:10:24:05AM:00000037.445:DEBUG:CheckForInput,IRIS Shutter Open,Timed,.1068
+06/17/2004:10:24:06AM:00000037.446:DEBUG:ExposeColor,Timed,.8117,ExpTime,736
+06/17/2004:10:24:06AM:00000037.446:DEBUG:AllFiltersOn,Enabling 24v on all Filters (Bi-Level Hi)
+06/17/2004:10:24:06AM:00000037.446:DEBUG:AllFiltersOn,Enabling 12v on all Filters (Bi-Level Lo)
+06/17/2004:10:24:06AM:00000037.446:DEBUG:AllFiltersOn,Disabling 24v on all Filters (Bi-Level OFF)
+06/17/2004:10:24:06AM:00000037.446:DEBUG:AllFiltersOn,Timed,.032 seconds.
+06/17/2004:10:24:06AM:00000037.446:DEBUG:MakeColor,Setting GREEN by disabling Magenta.
+06/17/2004:10:24:07AM:00000037.447:DEBUG:ExposeColor,Timed,1.1857,ExpTime,1124
+06/17/2004:10:24:07AM:00000037.447:DEBUG:AllFiltersOn,Enabling 24v on all Filters (Bi-Level Hi)
+06/17/2004:10:24:07AM:00000037.447:DEBUG:AllFiltersOn,Enabling 12v on all Filters (Bi-Level Lo)
+06/17/2004:10:24:07AM:00000037.447:DEBUG:AllFiltersOn,Disabling 24v on all Filters (Bi-Level OFF)
+06/17/2004:10:24:07AM:00000037.447:DEBUG:AllFiltersOn,Timed,.0324 seconds.
+06/17/2004:10:24:07AM:00000037.447:DEBUG:MakeColor,Setting BLUE by disabling Yellow.
+06/17/2004:10:24:08AM:00000037.449:DEBUG:ExposeColor,Timed,1.2482,ExpTime,1160
+06/17/2004:10:24:08AM:00000037.449:DEBUG:CheckForInput,IRIS Shutter Open,Timed,.0147
+06/17/2004:10:24:08AM:00000037.449:DEBUG:ExposeImage,Timed,3.6083 seconds.
+06/17/2004:10:24:08AM:00000037.449:DEBUG:MakeExposure,Timed,7.0018
+06/17/2004:10:24:08AM:00000037.449:DEBUG:CheckForInput,Right Pan Shutter Open,Timed,.1067
+06/17/2004:10:24:08AM:00000037.449:INFOR:PrepareToPrintImage,Configuring,c:\DVP2_R3\DVP2_Printers\DVP2_0001\Images\DVP2_Gray.psd,Calibration,Advance=False
+06/17/2004:10:24:08AM:00000037.449:DEBUG:PrepareToPrintImage,Not making paper advance.
+06/17/2004:10:24:08AM:00000037.449:DEBUG:WaitForPaperMask,Timed,.2914 seconds.
+06/17/2004:10:24:09AM:00000037.449:DEBUG:ProcessImage,Loading & processing bitmap image.
+06/17/2004:10:24:09AM:00000037.449:DEBUG:ProcessImage,Combining bitmap images...
+06/17/2004:10:24:10AM:00000037.451:DEBUG:ProcessImage,Timed,1.3583
+06/17/2004:10:24:11AM:00000037.451:DEBUG:CalculateExposures,Calculating red exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutr.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetr.frm
+06/17/2004:10:24:11AM:00000037.451:DEBUG:CalculateExposures,Calculating green exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutg.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetg.frm
+06/17/2004:10:24:11AM:00000037.451:DEBUG:CalculateExposures,Calculating blue exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutb.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetb.frm
+06/17/2004:10:24:11AM:00000037.451:DEBUG:CheckForInput,8x10 Lens Engaged,Timed,.0013
+06/17/2004:10:24:11AM:00000037.451:DEBUG:CheckForInput,LCD Rotated,Timed,.0011
+06/17/2004:10:24:11AM:00000037.451:DEBUG:PrepareToPrintImage,Timed,2.7665 seconds.
+06/17/2004:10:24:11AM:00000037.451:DEBUG:ClearImage,Outputting clear image to LCD
+06/17/2004:10:24:12AM:00000037.452:DEBUG:CheckForInput,Right Pan Shutter Open,Timed,.5773
+06/17/2004:10:24:12AM:00000037.452:INFOR:MakeExposure,Starting Exposure,c:\DVP2_R3\DVP2_Printers\DVP2_0001\Images\DVP2_LUT_Picto_Calibration.psd,Calibration
+06/17/2004:10:24:12AM:00000037.452:INFOR:PrepareToPrintImage,Configuring,c:\DVP2_R3\DVP2_Printers\DVP2_0001\Images\DVP2_LUT_Picto_Calibration.psd,Calibration,Advance=True
+06/17/2004:10:24:12AM:00000037.452:DEBUG:PrepareToPrintImage,Advancing Paper,LastSize=Calibration,CurAdv=14.5,PreAdv=0,PunchDist=0,MarkReq=No,Text=
+06/17/2004:10:24:12AM:00000037.452:DEBUG:PrepareToPrintImage,Advancing 14.5 inches
+06/17/2004:10:24:12AM:00000037.452:DEBUG:WaitForPaperAdvance,Timed,.0928
+06/17/2004:10:24:12AM:00000037.452:DEBUG:AdvancePaper,Backwriting not required.
+06/17/2004:10:24:12AM:00000037.453:DEBUG:WaitForPaperMask,Timed,.2695 seconds.
+06/17/2004:10:24:12AM:00000037.453:DEBUG:ProcessImage,Loading & processing bitmap image.
+06/17/2004:10:24:13AM:00000037.453:DEBUG:ProcessImage,Combining bitmap images...
+06/17/2004:10:24:14AM:00000037.454:DEBUG:ProcessImage,Timed,1.2945
+06/17/2004:10:24:14AM:00000037.454:DEBUG:CalculateExposures,Calculating red exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutr.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetr.frm
+06/17/2004:10:24:14AM:00000037.454:DEBUG:CalculateExposures,Calculating green exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutg.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetg.frm
+06/17/2004:10:24:14AM:00000037.455:DEBUG:CalculateExposures,Calculating blue exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutb.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetb.frm
+06/17/2004:10:24:14AM:00000037.455:DEBUG:WaitForPaperAdvance,Timed,.096
+06/17/2004:10:24:14AM:00000037.455:DEBUG:PrepareToPrintImage,Punching paper...
+06/17/2004:10:24:14AM:00000037.455:DEBUG:Punching Code=1
+06/17/2004:10:24:15AM:00000037.455:DEBUG:MakePunch,Code= 1,Timed,.3564 seconds.
+06/17/2004:10:24:15AM:00000037.455:DEBUG:CheckForInput,8x10 Lens Engaged,Timed,.0012
+06/17/2004:10:24:15AM:00000037.455:DEBUG:CheckForInput,LCD Rotated,Timed,.0011
+06/17/2004:10:24:15AM:00000037.455:DEBUG:PrepareToPrintImage,Timed,3.0329 seconds.
+06/17/2004:10:24:15AM:00000037.455:DEBUG:WaitForPaperMask,Timed,.2662 seconds.
+06/17/2004:10:24:15AM:00000037.455:DEBUG:WaitForPaperAdvance,Timed,.0921
+06/17/2004:10:24:15AM:00000037.455:DEBUG:ExposeImage,Quadrant Exposure Times R=184, G=281, B=290
+06/17/2004:10:24:15AM:00000037.455:DEBUG:CheckForInput,Right Pan Shutter Open,Timed,.0012
+06/17/2004:10:24:15AM:00000037.456:DEBUG:AllFiltersOn,Enabling 24v on all Filters (Bi-Level Hi)
+06/17/2004:10:24:15AM:00000037.456:DEBUG:AllFiltersOn,Enabling 12v on all Filters (Bi-Level Lo)
+06/17/2004:10:24:15AM:00000037.456:DEBUG:AllFiltersOn,Disabling 24v on all Filters (Bi-Level OFF)
+06/17/2004:10:24:15AM:00000037.456:DEBUG:AllFiltersOn,Timed,.0256 seconds.
+06/17/2004:10:24:15AM:00000037.456:DEBUG:MakeColor,Setting RED by disabling Cyan.
+06/17/2004:10:24:15AM:00000037.456:DEBUG:CheckForInput,IRIS Shutter Open,Timed,.1067
+06/17/2004:10:24:16AM:00000037.457:DEBUG:ExposeColor,Timed,.8117,ExpTime,736
+06/17/2004:10:24:16AM:00000037.457:DEBUG:AllFiltersOn,Enabling 24v on all Filters (Bi-Level Hi)
+06/17/2004:10:24:16AM:00000037.457:DEBUG:AllFiltersOn,Enabling 12v on all Filters (Bi-Level Lo)
+06/17/2004:10:24:16AM:00000037.457:DEBUG:AllFiltersOn,Disabling 24v on all Filters (Bi-Level OFF)
+06/17/2004:10:24:16AM:00000037.457:DEBUG:AllFiltersOn,Timed,.0321 seconds.
+06/17/2004:10:24:16AM:00000037.457:DEBUG:MakeColor,Setting GREEN by disabling Magenta.
+06/17/2004:10:24:17AM:00000037.458:DEBUG:ExposeColor,Timed,1.1857,ExpTime,1124
+06/17/2004:10:24:17AM:00000037.458:DEBUG:AllFiltersOn,Enabling 24v on all Filters (Bi-Level Hi)
+06/17/2004:10:24:17AM:00000037.458:DEBUG:AllFiltersOn,Enabling 12v on all Filters (Bi-Level Lo)
+06/17/2004:10:24:17AM:00000037.458:DEBUG:AllFiltersOn,Disabling 24v on all Filters (Bi-Level OFF)
+06/17/2004:10:24:17AM:00000037.458:DEBUG:AllFiltersOn,Timed,.0324 seconds.
+06/17/2004:10:24:17AM:00000037.458:DEBUG:MakeColor,Setting BLUE by disabling Yellow.
+06/17/2004:10:24:19AM:00000037.459:DEBUG:ExposeColor,Timed,1.2483,ExpTime,1160
+06/17/2004:10:24:19AM:00000037.459:DEBUG:CheckForInput,IRIS Shutter Open,Timed,.0145
+06/17/2004:10:24:19AM:00000037.459:DEBUG:ExposeImage,Timed,3.6081 seconds.
+06/17/2004:10:24:19AM:00000037.459:DEBUG:MakeExposure,Timed,7.0017
+06/17/2004:10:24:19AM:00000037.459:DEBUG:CheckForInput,Right Pan Shutter Open,Timed,.1068
+06/17/2004:10:24:19AM:00000037.459:INFOR:PrepareToPrintImage,Configuring,c:\DVP2_R3\DVP2_Printers\DVP2_0001\Images\DVP2_Gray.psd,Calibration,Advance=False
+06/17/2004:10:24:19AM:00000037.459:DEBUG:PrepareToPrintImage,Not making paper advance.
+06/17/2004:10:24:19AM:00000037.459:DEBUG:WaitForPaperMask,Timed,.2763 seconds.
+06/17/2004:10:24:19AM:00000037.460:DEBUG:ProcessImage,Loading & processing bitmap image.
+06/17/2004:10:24:19AM:00000037.460:DEBUG:ProcessImage,Combining bitmap images...
+06/17/2004:10:24:20AM:00000037.461:DEBUG:ProcessImage,Timed,.9425
+06/17/2004:10:24:20AM:00000037.461:DEBUG:CalculateExposures,Calculating red exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutr.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetr.frm
+06/17/2004:10:24:20AM:00000037.461:DEBUG:CalculateExposures,Calculating green exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutg.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetg.frm
+06/17/2004:10:24:20AM:00000037.461:DEBUG:CalculateExposures,Calculating blue exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutb.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetb.frm
+06/17/2004:10:24:21AM:00000037.461:DEBUG:CheckForInput,8x10 Lens Engaged,Timed,.0012
+06/17/2004:10:24:21AM:00000037.461:DEBUG:CheckForInput,LCD Rotated,Timed,.0011
+06/17/2004:10:24:21AM:00000037.461:DEBUG:PrepareToPrintImage,Timed,1.8323 seconds.
+06/17/2004:10:24:21AM:00000037.461:DEBUG:ClearImage,Outputting clear image to LCD
+06/17/2004:10:24:50AM:00000037.490:DEBUG:CheckForInput,Right Pan Shutter Open,Timed,.5876
+06/17/2004:10:24:50AM:00000037.490:INFOR:MakeExposure,Starting Exposure,c:\DVP2_R3\DVP2_Printers\DVP2_0001\Images\DVP2_LUT_Picto_Calibration.psd,Calibration
+06/17/2004:10:24:50AM:00000037.490:INFOR:PrepareToPrintImage,Configuring,c:\DVP2_R3\DVP2_Printers\DVP2_0001\Images\DVP2_LUT_Picto_Calibration.psd,Calibration,Advance=True
+06/17/2004:10:24:50AM:00000037.490:DEBUG:PrepareToPrintImage,Advancing Paper,LastSize=Calibration,CurAdv=14.5,PreAdv=0,PunchDist=0,MarkReq=No,Text=
+06/17/2004:10:24:50AM:00000037.490:DEBUG:PrepareToPrintImage,Advancing 14.5 inches
+06/17/2004:10:24:50AM:00000037.490:DEBUG:WaitForPaperAdvance,Timed,.0966
+06/17/2004:10:24:50AM:00000037.490:DEBUG:AdvancePaper,Backwriting not required.
+06/17/2004:10:24:50AM:00000037.491:DEBUG:WaitForPaperMask,Timed,.2715 seconds.
+06/17/2004:10:24:50AM:00000037.491:DEBUG:ProcessImage,Loading & processing bitmap image.
+06/17/2004:10:24:50AM:00000037.491:DEBUG:ProcessImage,Combining bitmap images...
+06/17/2004:10:24:52AM:00000037.492:DEBUG:ProcessImage,Timed,1.3495
+06/17/2004:10:24:52AM:00000037.493:DEBUG:CalculateExposures,Calculating red exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutr.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetr.frm
+06/17/2004:10:24:53AM:00000037.493:DEBUG:CalculateExposures,Calculating green exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutg.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetg.frm
+06/17/2004:10:24:53AM:00000037.493:DEBUG:CalculateExposures,Calculating blue exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutb.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetb.frm
+06/17/2004:10:24:53AM:00000037.493:DEBUG:WaitForPaperAdvance,Timed,.0936
+06/17/2004:10:24:53AM:00000037.493:DEBUG:PrepareToPrintImage,Punching paper...
+06/17/2004:10:24:53AM:00000037.493:DEBUG:Punching Code=1
+06/17/2004:10:24:53AM:00000037.494:DEBUG:MakePunch,Code= 1,Timed,.356 seconds.
+06/17/2004:10:24:53AM:00000037.494:DEBUG:CheckForInput,8x10 Lens Engaged,Timed,.0012
+06/17/2004:10:24:53AM:00000037.494:DEBUG:CheckForInput,LCD Rotated,Timed,.0011
+06/17/2004:10:24:53AM:00000037.494:DEBUG:PrepareToPrintImage,Timed,3.7986 seconds.
+06/17/2004:10:24:54AM:00000037.494:DEBUG:WaitForPaperMask,Timed,.2667 seconds.
+06/17/2004:10:24:54AM:00000037.494:DEBUG:WaitForPaperAdvance,Timed,.0924
+06/17/2004:10:24:54AM:00000037.494:DEBUG:ExposeImage,Quadrant Exposure Times R=184, G=281, B=290
+06/17/2004:10:24:54AM:00000037.494:DEBUG:CheckForInput,Right Pan Shutter Open,Timed,.0012
+06/17/2004:10:24:54AM:00000037.494:DEBUG:AllFiltersOn,Enabling 24v on all Filters (Bi-Level Hi)
+06/17/2004:10:24:54AM:00000037.494:DEBUG:AllFiltersOn,Enabling 12v on all Filters (Bi-Level Lo)
+06/17/2004:10:24:54AM:00000037.494:DEBUG:AllFiltersOn,Disabling 24v on all Filters (Bi-Level OFF)
+06/17/2004:10:24:54AM:00000037.494:DEBUG:AllFiltersOn,Timed,.0252 seconds.
+06/17/2004:10:24:54AM:00000037.494:DEBUG:MakeColor,Setting RED by disabling Cyan.
+06/17/2004:10:24:54AM:00000037.494:DEBUG:CheckForInput,IRIS Shutter Open,Timed,.1067
+06/17/2004:10:24:55AM:00000037.495:DEBUG:ExposeColor,Timed,.8274,ExpTime,736
+06/17/2004:10:24:55AM:00000037.495:DEBUG:AllFiltersOn,Enabling 24v on all Filters (Bi-Level Hi)
+06/17/2004:10:24:55AM:00000037.495:DEBUG:AllFiltersOn,Enabling 12v on all Filters (Bi-Level Lo)
+06/17/2004:10:24:55AM:00000037.495:DEBUG:AllFiltersOn,Disabling 24v on all Filters (Bi-Level OFF)
+06/17/2004:10:24:55AM:00000037.495:DEBUG:AllFiltersOn,Timed,.032 seconds.
+06/17/2004:10:24:55AM:00000037.495:DEBUG:MakeColor,Setting GREEN by disabling Magenta.
+06/17/2004:10:24:56AM:00000037.496:DEBUG:ExposeColor,Timed,1.1857,ExpTime,1124
+06/17/2004:10:24:56AM:00000037.496:DEBUG:AllFiltersOn,Enabling 24v on all Filters (Bi-Level Hi)
+06/17/2004:10:24:56AM:00000037.497:DEBUG:AllFiltersOn,Enabling 12v on all Filters (Bi-Level Lo)
+06/17/2004:10:24:56AM:00000037.497:DEBUG:AllFiltersOn,Disabling 24v on all Filters (Bi-Level OFF)
+06/17/2004:10:24:56AM:00000037.497:DEBUG:AllFiltersOn,Timed,.0325 seconds.
+06/17/2004:10:24:56AM:00000037.497:DEBUG:MakeColor,Setting BLUE by disabling Yellow.
+06/17/2004:10:24:57AM:00000037.498:DEBUG:ExposeColor,Timed,1.2482,ExpTime,1160
+06/17/2004:10:24:57AM:00000037.498:DEBUG:CheckForInput,IRIS Shutter Open,Timed,.0146
+06/17/2004:10:24:57AM:00000037.498:DEBUG:ExposeImage,Timed,3.6228 seconds.
+06/17/2004:10:24:57AM:00000037.498:DEBUG:MakeExposure,Timed,7.7837
+06/17/2004:10:24:57AM:00000037.498:DEBUG:CheckForInput,Right Pan Shutter Open,Timed,.0904
+06/17/2004:10:24:57AM:00000037.498:INFOR:PrepareToPrintImage,Configuring,c:\DVP2_R3\DVP2_Printers\DVP2_0001\Images\DVP2_Gray.psd,Calibration,Advance=False
+06/17/2004:10:24:57AM:00000037.498:DEBUG:PrepareToPrintImage,Not making paper advance.
+06/17/2004:10:24:58AM:00000037.498:DEBUG:WaitForPaperMask,Timed,.2774 seconds.
+06/17/2004:10:24:58AM:00000037.498:DEBUG:ProcessImage,Loading & processing bitmap image.
+06/17/2004:10:24:58AM:00000037.498:DEBUG:ProcessImage,Combining bitmap images...
+06/17/2004:10:24:59AM:00000037.500:DEBUG:ProcessImage,Timed,1.3133
+06/17/2004:10:24:59AM:00000037.500:DEBUG:CalculateExposures,Calculating red exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutr.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetr.frm
+06/17/2004:10:24:59AM:00000037.500:DEBUG:CalculateExposures,Calculating green exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutg.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetg.frm
+06/17/2004:10:25:00AM:00000037.500:DEBUG:CalculateExposures,Calculating blue exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutb.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetb.frm
+06/17/2004:10:25:00AM:00000037.500:DEBUG:CheckForInput,8x10 Lens Engaged,Timed,.0012
+06/17/2004:10:25:00AM:00000037.500:DEBUG:CheckForInput,LCD Rotated,Timed,.0011
+06/17/2004:10:25:00AM:00000037.500:DEBUG:PrepareToPrintImage,Timed,2.258 seconds.
+06/17/2004:10:25:00AM:00000037.500:DEBUG:ClearImage,Outputting clear image to LCD
+06/17/2004:10:25:00AM:00000037.501:DEBUG:CheckForInput,Right Pan Shutter Open,Timed,.5852
+06/17/2004:10:25:00AM:00000037.501:DEBUG:WaitForPaperAdvance,Timed,.1049
+06/17/2004:10:25:01AM:00000037.501:DEBUG:AdvancePaper,Backwriting not required.
+06/17/2004:10:25:05AM:00000037.505:DEBUG:WaitForPaperAdvance,Timed,4.0404
+06/17/2004:10:25:05AM:00000037.505:DEBUG:CheckForInput,Right Pan Shutter Open,Timed,.0937
+06/17/2004:10:25:05AM:00000037.505:INFOR:PrepareToPrintImage,Configuring,c:\DVP2_R3\DVP2_Printers\DVP2_0001\Images\DVP2_Gray.psd,Calibration,Advance=False
+06/17/2004:10:25:05AM:00000037.505:DEBUG:PrepareToPrintImage,Not making paper advance.
+06/17/2004:10:25:05AM:00000037.506:DEBUG:WaitForPaperMask,Timed,.275 seconds.
+06/17/2004:10:25:05AM:00000037.506:DEBUG:ProcessImage,Loading & processing bitmap image.
+06/17/2004:10:25:05AM:00000037.506:DEBUG:ProcessImage,Combining bitmap images...
+06/17/2004:10:25:06AM:00000037.507:DEBUG:ProcessImage,Timed,1.0537
+06/17/2004:10:25:06AM:00000037.507:DEBUG:CalculateExposures,Calculating red exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutr.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetr.frm
+06/17/2004:10:25:07AM:00000037.507:DEBUG:CalculateExposures,Calculating green exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutg.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetg.frm
+06/17/2004:10:25:07AM:00000037.507:DEBUG:CalculateExposures,Calculating blue exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutb.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetb.frm
+06/17/2004:10:25:07AM:00000037.507:DEBUG:CheckForInput,8x10 Lens Engaged,Timed,.0012
+06/17/2004:10:25:07AM:00000037.507:DEBUG:CheckForInput,LCD Rotated,Timed,.0011
+06/17/2004:10:25:07AM:00000037.507:DEBUG:PrepareToPrintImage,Timed,1.9435 seconds.
+06/17/2004:10:25:07AM:00000037.507:DEBUG:ClearImage,Outputting clear image to LCD
+06/17/2004:10:28:42AM:00000037.722:INFOR:PrepareToPrintImage,Configuring,c:\DVP2_R3\DVP2_Printers\DVP2_0001\Images\DVP2_Gray.psd,Calibration,Advance=False
+06/17/2004:10:28:42AM:00000037.722:DEBUG:PrepareToPrintImage,Not making paper advance.
+06/17/2004:10:28:42AM:00000037.722:DEBUG:WaitForPaperMask,Timed,.2671 seconds.
+06/17/2004:10:28:42AM:00000037.722:DEBUG:ProcessImage,Loading & processing bitmap image.
+06/17/2004:10:28:42AM:00000037.723:DEBUG:ProcessImage,Combining bitmap images...
+06/17/2004:10:28:43AM:00000037.724:DEBUG:ProcessImage,Timed,1.3209
+06/17/2004:10:28:43AM:00000037.724:DEBUG:CalculateExposures,Calculating red exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutr.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetr.frm
+06/17/2004:10:28:43AM:00000037.724:DEBUG:CalculateExposures,Calculating green exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutg.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetg.frm
+06/17/2004:10:28:44AM:00000037.724:DEBUG:CalculateExposures,Calculating blue exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutb.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetb.frm
+06/17/2004:10:28:44AM:00000037.724:DEBUG:CheckForInput,8x10 Lens Engaged,Timed,.0012
+06/17/2004:10:28:44AM:00000037.724:DEBUG:CheckForInput,LCD Rotated,Timed,.0011
+06/17/2004:10:28:44AM:00000037.724:DEBUG:PrepareToPrintImage,Timed,2.2146 seconds.
+06/17/2004:10:28:44AM:00000037.724:DEBUG:ClearImage,Outputting clear image to LCD
+06/17/2004:10:28:45AM:00000037.726:INFOR:CommDisconnect,Closed Backwriter port.
+06/17/2004:10:28:46AM:00000037.726:INFOR:CommDisconnect,Closed Index 0
+06/17/2004:10:28:47AM:00000037.727:INFOR:ErrorForm:Form_Unload,UnLoading Error Form...

@@ -1,0 +1,135 @@
+[Root]
+Most Recent Package=DVP2 Deployment Package
+
+
+[Package|DVP2 Deployment Package|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\DVP2\Setup
+
+[Package|DVP2 Deployment Package|Configure DAO ISAMs]
+Applicable=No
+
+[Package|DVP2 Deployment Package|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|DVP2 Deployment Package|Files Found]
+
+[Package|DVP2 Deployment Package|Files Released]
+cbw.dll=
+
+[Package|DVP2 Deployment Package|Missing Dependency Information]
+C:\WINNT\SYSTEM32\ltocx13n.ocx=
+C:\WINNT\SYSTEM32\ltdlg13n.ocx=
+C:\Dev\DVP2\Source\sx32w.dll=
+C:\Dev\DVP2\Source\Expdll.dll=
+C:\Dev\DVP2\Source\cbw32.dll=
+
+[Package|DVP2 Deployment Package|Out-of-Date Dependency Information]
+C:\WINNT\SYSTEM32\richtx32.ocx=
+C:\Program Files\Spread60\Bin\SPR32X60.ocx=
+C:\WINNT\SYSTEM32\COMDLG32.OCX=
+C:\WINNT\SYSTEM32\MSCOMCTL.OCX=
+C:\WINNT\SYSTEM32\scrrun.dll=
+
+[Package|DVP2 Deployment Package|Files Added]
+
+[Package|DVP2 Deployment Package|Files Removed]
+
+[Package|DVP2 Deployment Package|Files In Project]
+C:\Dev\DVP2\Source\dvp2.exe=Yes
+C:\WINNT\SYSTEM32\msvbvm60.dll=Yes
+C:\WINNT\SYSTEM32\OLEAUT32.DLL=Yes
+C:\WINNT\SYSTEM32\OLEPRO32.DLL=Yes
+C:\WINNT\SYSTEM32\ASYCFILT.DLL=Yes
+C:\WINNT\SYSTEM32\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Dev\DVP2\Source\cbw32.dll=Yes
+C:\Dev\DVP2\Source\Expdll.dll=Yes
+C:\Dev\DVP2\Source\sx32w.dll=Yes
+C:\WINNT\SYSTEM32\scrrun.dll=Yes
+C:\WINNT\SYSTEM32\msvcrt.dll=Yes
+C:\WINNT\SYSTEM32\ltdlg13n.ocx=Yes
+C:\WINNT\SYSTEM32\MSCOMCTL.OCX=Yes
+C:\WINNT\SYSTEM32\COMDLG32.OCX=Yes
+C:\Program Files\Spread60\Bin\SPR32X60.ocx=Yes
+C:\WINNT\SYSTEM32\MFC42.DLL=Yes
+C:\WINNT\SYSTEM32\richtx32.ocx=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=Yes
+C:\WINNT\SYSTEM32\ltocx13n.ocx=Yes
+C:\WINNT\SYSTEM32\MSCOMM32.OCX=Yes
+D:\Program Files\Infragistics\UltraSuite\IGTabs40.ocx=Yes
+D:\Program Files\Infragistics\UltraSuite\IGThreed40.ocx=Yes
+D:\Program Files\Infragistics\UltraSuite\PVMltBtn.ocx=Yes
+D:\Program Files\Infragistics\UltraSuite\PVPrgbar.ocx=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINNT\SYSTEM32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|DVP2 Deployment Package|Configure Registry Files]
+Applicable=No
+
+[Package|DVP2 Deployment Package|Configure Remote Servers]
+Applicable=No
+
+[Package|DVP2 Deployment Package|Install Locations]
+C:\Dev\DVP2\Source\dvp2.exe=$(AppPath)
+C:\WINNT\SYSTEM32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINNT\SYSTEM32\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WINNT\SYSTEM32\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WINNT\SYSTEM32\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WINNT\SYSTEM32\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Dev\DVP2\Source\cbw32.dll=$(WinSysPath)
+C:\Dev\DVP2\Source\Expdll.dll=$(WinSysPath)
+C:\Dev\DVP2\Source\sx32w.dll=$(WinSysPath)
+C:\WINNT\SYSTEM32\scrrun.dll=$(WinSysPath)
+C:\WINNT\SYSTEM32\msvcrt.dll=$(WinSysPathSysFile)
+C:\WINNT\SYSTEM32\ltdlg13n.ocx=$(WinSysPath)
+C:\WINNT\SYSTEM32\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINNT\SYSTEM32\COMDLG32.OCX=$(WinSysPath)
+C:\Program Files\Spread60\Bin\SPR32X60.ocx=$(WinSysPath)
+C:\WINNT\SYSTEM32\MFC42.DLL=$(WinSysPathSysFile)
+C:\WINNT\SYSTEM32\richtx32.ocx=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=$(WinSysPathSysFile)
+C:\WINNT\SYSTEM32\ltocx13n.ocx=$(WinSysPath)
+C:\WINNT\SYSTEM32\MSCOMM32.OCX=$(WinSysPath)
+D:\Program Files\Infragistics\UltraSuite\IGTabs40.ocx=$(WinSysPath)
+D:\Program Files\Infragistics\UltraSuite\IGThreed40.ocx=$(WinSysPath)
+D:\Program Files\Infragistics\UltraSuite\PVMltBtn.ocx=$(WinSysPath)
+D:\Program Files\Infragistics\UltraSuite\PVPrgbar.ocx=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINNT\SYSTEM32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|DVP2 Deployment Package|Configure Shared Files]
+Applicable=Yes
+C:\Dev\DVP2\Source\dvp2.exe=No
+
+[Package|DVP2 Deployment Package|Distribution]
+Type=single
+Size=
+Title=ISA DVP2
+
+[Package|DVP2 Deployment Package|IconGroups]
+Group0=ISA DVP2
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|DVP2 Deployment Package|ISA DVP2]
+Icon1=dvp2.exe
+Title1=ISA DVP2
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|DVP2 Deployment Package|Package]
+PackageFolder=C:\DVP2\Setup
+ProjectFolder=C:\Dev\DVP2\Source
+ServerSideCab=
+File1=C:\DVP2\Setup\setup.exe
+File2=C:\DVP2\Setup\Setup.Lst
+File3=C:\DVP2\Setup\dvp2.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

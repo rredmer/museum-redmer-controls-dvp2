@@ -1,0 +1,12 @@
+# This files hold the gain to be applied for an iteration
+# on each line.
+# The columns of each line are for each Dac level according
+# to the .dlv file and in that order (ie. 197 dac first)
+#
+# Remember that iteration 0 does not use gain so make
+# that entry 1.0
+#
+#  for Fuji type DP - revA
+#
+1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0
+1.0 1.4 1.5 1.55 1.6 1.6 1.6 1.6 1.6 1.55 1.5 1.45 0.9

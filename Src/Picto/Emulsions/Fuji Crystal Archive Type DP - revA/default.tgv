@@ -1,0 +1,13 @@
+#
+# Fuji TypeDP - revA .tgv file
+#
+DMax=2.37
+DMin=.02
+DacMinSat=0
+DacMaxSat=99.2
+DacMin=0
+DacMax=95.0
+DMaxType=0
+DMinType=1
+ExpFact=2.0
+

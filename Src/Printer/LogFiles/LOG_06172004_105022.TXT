@@ -1,0 +1,155 @@
+06/17/2004:10:50:22AM:00000039.022:INFOR:ReadIniFile,Starting application in C:\DVP2_R3\Source\Printer
+06/17/2004:10:50:22AM:00000039.022:INFOR:ReadIniFile,Setting startup drive to C:
+06/17/2004:10:50:22AM:00000039.022:INFOR:ReadIniFile,Setting INI file to C:\DVP2_R3\Source\Printer\DVP2.ini
+06/17/2004:10:50:22AM:00000039.022:INFOR:ReadIniFile,Setting Database Path to c:\DVP2_R3\Database\Settings.mdb
+06/17/2004:10:50:22AM:00000039.022:INFOR:ReadIniFile,Setting Print Que Path to c:\DVP2_R3\DVP2_Printers\DVP2_0001\Database\PrintQue.mdb
+06/17/2004:10:50:22AM:00000039.022:INFOR:ReadIniFile,Setting Printer Name to DVP2_0001
+06/17/2004:10:50:22AM:00000039.022:INFOR:ReadIniFile,Setting Settings Path to c:\DVP2_R3\DVP2_Printers\DVP2_0001\
+06/17/2004:10:50:22AM:00000039.022:INFOR:ErrorForm:Form_Load,Loading Error Form...
+06/17/2004:10:50:22AM:00000039.022:INFOR:UsbKeyDiagnostics,Getting application security mode from hardware dongle.
+06/17/2004:10:50:22AM:00000039.022:INFOR:UsbKeyDiagnostics,FormatPacket,0
+06/17/2004:10:50:22AM:00000039.022:INFOR:UsbKeyDiagnostics,Initialize,0
+06/17/2004:10:50:22AM:00000039.022:INFOR:UsbKeyDiagnostics,FindFirstUnit,0
+06/17/2004:10:50:22AM:00000039.022:INFOR:UsbKeyDiagnostics,Found and validated dongle.
+06/17/2004:10:50:22AM:00000039.022:INFOR:UsbKeyDiagnostics,Timed, .0995 seconds.
+06/17/2004:10:50:22AM:00000039.022:INFOR:CompactDatabase,Compacting c:\DVP2_R3\DVP2_Printers\DVP2_0001\Database\PrintQue.mdb
+06/17/2004:10:50:22AM:00000039.022:INFOR:CompactDatabase,Timed,.0191
+06/17/2004:10:50:22AM:00000039.022:INFOR:OpenDatabase,Opening ADO Connection=Provider=Microsoft.Jet.OLEDB.4.0;Data Source=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Database\PrintQue.mdb;Persist Security Info=False
+06/17/2004:10:50:22AM:00000039.022:INFOR:OpenDatabase,Opening Printer Queue Recordset as SELECT * FROM ActivePrintQue WHERE PrinterName='DVP2_0001';
+06/17/2004:10:50:22AM:00000039.022:INFOR:OpenDatabase,Opening File Error Recordset as SELECT * FROM FileErrors WHERE PrinterName='DVP2_0001';
+06/17/2004:10:50:22AM:00000039.022:INFOR:OpenDatabase,Opening Print History Recordset as SELECT * FROM PrintHistory WHERE PrinterName='DVP2_0001';
+06/17/2004:10:50:22AM:00000039.022:INFOR:OpenDatabase,Connecting to Micrsoft Access Database using: Provider=Microsoft.Jet.OLEDB.4.0;Data Source=c:\DVP2_R3\Database\Settings.mdb;Persist Security Info=true
+06/17/2004:10:50:22AM:00000039.022:INFOR:OpenDatabase,Opening ADO Connection=Provider=Microsoft.Jet.OLEDB.4.0;Data Source=c:\DVP2_R3\Database\Settings.mdb;Persist Security Info=true
+06/17/2004:10:50:22AM:00000039.022:INFOR:OpenDatabase,Opening Printer List Recordset as SELECT * FROM PrinterList ORDER BY PrinterName
+06/17/2004:10:50:22AM:00000039.022:INFOR:OpenDatabase,Opening Printer Option Recordset as SELECT * FROM PrinterOptions WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,OptionNumber
+06/17/2004:10:50:22AM:00000039.022:INFOR:OpenDatabase,Opening Printer Settings Recordset as SELECT * FROM PrinterSettings WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,SettingNumber
+06/17/2004:10:50:22AM:00000039.022:INFOR:OpenDatabase,Opening Print Size Recordset as SELECT * FROM PrintSizes WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,PrintSize;
+06/17/2004:10:50:22AM:00000039.022:INFOR:OpenDatabase,Opening Input Recordset as SELECT * FROM DigitalInputs WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,InputNumber
+06/17/2004:10:50:22AM:00000039.022:INFOR:OpenDatabase,Opening Output Recordset as SELECT * FROM DigitalOutputs WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,OutputNumber
+06/17/2004:10:50:22AM:00000039.022:INFOR:OpenDatabase,Opening Exposure Time Recordset as SELECT * FROM ExposureTimes WHERE PrinterName='DVP2_0001';
+06/17/2004:10:50:22AM:00000039.022:INFOR:OpenDatabase,Opening Exposure Time History Recordset as SELECT * FROM ExposureTimeHistory WHERE PrinterName='DVP2_0001';
+06/17/2004:10:50:22AM:00000039.022:INFOR:OpenDatabase,Opening Hot Folder Recordset as SELECT PrinterName,HotFolderPath,FolderType,FolderEnabled,Status,NumberOfFiles FROM HotFolders WHERE PrinterName='DVP2_0001'
+06/17/2004:10:50:22AM:00000039.022:INFOR:OpenDatabase,Opening Printer Statistics Recordset as SELECT * FROM PrinterStatistics WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,StatisticNumber;
+06/17/2004:10:50:22AM:00000039.022:INFOR:OpenDatabase,Opening Daily Calibration Recordset as SELECT * FROM DailyCalibration WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,BlockNum;
+06/17/2004:10:50:22AM:00000039.022:INFOR:OpenDatabase,Opening Ring Around Recordset as SELECT * FROM RingArounds WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,BlockNum;
+06/17/2004:10:50:22AM:00000039.022:INFOR:OpenDatabase,Opening Ring Around Recordset as SELECT * FROM RingAroundsAutoScan WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,BlockNum;
+06/17/2004:10:50:22AM:00000039.022:INFOR:OpenDatabase,Opening Offset Calibration Recordset as SELECT * FROM OffsetCalibrations WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,OffsetNum
+06/17/2004:10:50:22AM:00000039.022:INFOR:OpenDatabase,Opening Lut Calibration Recordset as SELECT * FROM LutCalibrations WHERE PrinterName='DVP2_0001' ORDER BY PrinterName,LutNum
+06/17/2004:10:50:22AM:00000039.022:INFOR:OpenDatabase,Opening BackWriter Settings Recordset as SELECT * FROM PrinterSettings WHERE PrinterName='DVP2_0001' AND SettingNumber>=10 AND SettingNumber<20 ORDER BY PrinterName,SettingNumber
+06/17/2004:10:50:22AM:00000039.022:INFOR:OpenDatabase,Opening Emulsion Recordset as SELECT * FROM PaperEmulsions;
+06/17/2004:10:50:22AM:00000039.022:INFOR:OpenDatabase,Opening Emulsion Data Recordset as SELECT * FROM PaperEmulsionData WHERE EmulsionNumber=1 ORDER BY EmulsionNumber,DensityNumber;
+06/17/2004:10:50:22AM:00000039.022:INFOR:OpenDatabase,Opening Lead Tools Error Recordset as SELECT * FROM LeadErrorCodes
+06/17/2004:10:50:22AM:00000039.022:INFOR:OpenDatabase,Opening Lab Aim Recordset as SELECT * FROM LabAim
+06/17/2004:10:50:22AM:00000039.022:INFOR:OpenDatabase,Timed,.1274 seconds.
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerOption,1,Debug Mode,True
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerOption,2,Stepper Mask Installed,True
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerOption,3,Daylight Load,True
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerOption,4,Single Backwriter Installed,False
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerOption,5,Dual Backwriter Installed,True
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerOption,6,Single Punch Installed,True
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerOption,7,Package Punch Installed,False
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerOption,9,Platen Cylinder Installed,False
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerOption,8,RS-422 Motor Configuration,True
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerOption,9,Platen Cylinder Installed,False
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerOption,10,Render Queue - Get Quantity From File Name,True
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerOption,11,Render Queue - Get Punch Code From File Name,False
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerOption,12,Render Queue - Get BackWriter Text from File Name,True
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerOption,13,Render Queue - Sort By File Name,False
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerOption,14,Render Queue - Fuji File Naming,True
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerOption,15,Use Fixed BackWriter Text From Maintenance Screen,False
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerOption,20,Apply Gray Borders on LCD Image,True
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerOption,21,Apply MullerSOHN LUT,False
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerOption,22,Apply Pictographics LUT,True
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerOption,30,Render Digital Cut Code,False
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerOption,40,Enable Q.C. in Printer Console,True
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerOption,41,Enable Print Queue History,True
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerSetting,1,Calibration File Path,C:\DVP2\Calibration Images
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerSetting,2,Log File Path,C:\DVP2\Log Files
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerSetting,3,RAM Disk Path,S:
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerSetting,4,Administrative Password,
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerSetting,5,Paper Advance Motor PPI,236
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerSetting,6,Paper Advance Manual Length,10
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerSetting,7,Paper Advance TearOff Length,40
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerSetting,8,Quality Control Password,
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerSetting,10,BackWriter Text 1,Luck Color Lab
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerSetting,11,BackWriter Text 2,Printed on DVP-2
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerSetting,12,Character Delay,1000
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerSetting,13,Dot On Time,350
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerSetting,14,Dot Off Time,500
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerSetting,15,Maximum # Characters,50
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerSetting,16,Delay from start of advance,0
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerSetting,17,Ribbon Motor Speed,200
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerSetting,18,Character Height (dots),7
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerSetting,19,Wait for stepper motor input,Yes
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerSetting,30,Stepper Mask Home Every # Prints,0
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerSetting,31,Stepper Mask Steps on Button Click,500
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerSetting,32,Stepper Mask Left Limit,-225000
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerSetting,33,Stepper Mask Right Limit,74000
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerSetting,34,Stepper Mask Holding Torque (%, Max=60),50
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerSetting,40,Punch Solenoid Enable Time (ms),5
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerSetting,41,Punch Engage Time (ms),50
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerSetting,42,Punch Disengage Time (ms),50
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerSetting,43,Punch Pkg Extend Time (ms),100
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerSetting,50,Digital Cut Code Size (Pixels),16
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerSetting,51,Digital Cut Code 8x10 Pixels From Left Edge,0
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerSetting,52,Digital Cut Code 11x14 Pixels From Top Edge,0
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerSetting,60,Purge log files after # days,30
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerSetting,61,Purge exposure time history after # days,30
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetServerSetting,62,Purge print queue history after # days,30
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetStatistic,Retrieved 1 Name=Total Images
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetStatistic,Retrieved 2 Name=Total Exposures
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetStatistic,Retrieved 3 Name=Exposures/Second
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetStatistic,Retrieved 4 Name=Average Exposure Time (Sec.)
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetStatistic,Retrieved 5 Name=Average Server Time (Sec.)
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetStatistic,Retrieved 6 Name=Average Advance Time (Sec.)
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetStatistic,Retrieved 7 Name=Time Running (Hrs.)
+06/17/2004:10:50:22AM:00000039.022:INFOR:GetStatistic,Retrieved 8 Name=Paper Used (ft.)
+06/17/2004:10:50:22AM:00000039.022:INFOR:CopySettingsFolder,Using Hard Disk for temporary files, RAMDISK is not formatted,Folder=c:\DVP2_R3\DVP2_Printers\DVP2_0001\
+06/17/2004:10:50:22AM:00000039.022:INFOR:CopySettingsFolder,Timed,.0008 seconds.
+06/17/2004:10:50:22AM:00000039.023:INFOR:OpenDatabase,Opening Emulsion Data Recordset as SELECT * FROM PaperEmulsionData WHERE EmulsionNumber=1 ORDER BY EmulsionNumber,DensityNumber;
+06/17/2004:10:50:22AM:00000039.023:INFOR:OpenDatabase,Opening LUT Densitometer Values Recordset as SELECT * FROM LutDensitometerValues WHERE PrinterName='DVP2_0001' AND LutNum=2 ORDER BY PrinterName,BlockNum;
+06/17/2004:10:50:22AM:00000039.023:INFOR:InitializeHardware,Connecting to Panel...
+06/17/2004:10:50:23AM:00000039.024:INFOR:InitializeHardware,Setting LCD Output Device to \\.\Display2
+06/17/2004:10:50:23AM:00000039.024:INFOR:InitializeHardware,Opening LCD device...
+06/17/2004:10:50:23AM:00000039.024:INFOR:InitializeHardware,Timed,.9084 seconds.
+06/17/2004:10:50:23AM:00000039.024:INFOR:InitializeHardware,Connecting to Motors...
+06/17/2004:10:50:23AM:00000039.024:INFOR:InitializeHardware,Connecting to devices using RS-422 configuration.
+06/17/2004:10:50:23AM:00000039.024:INFOR:CommConnect,Opened Index 0,Port 1,Settings 9600,N,8,1
+06/17/2004:10:50:24AM:00000039.024:DEBUG:InitializeStepperMask,Sending stepper mask motor parameters via RS-422...
+06/17/2004:10:50:26AM:00000039.027:DEBUG:PaperMaskHome,Sending motors home via RS-422...
+06/17/2004:10:50:27AM:00000039.027:DEBUG:WaitForPaperMask,Timed,.2712 seconds.
+06/17/2004:10:50:29AM:00000039.029:DEBUG:WaitForPaperMask,Timed,2.1265 seconds.
+06/17/2004:10:50:29AM:00000039.030:DEBUG:InitializePaperAdvance,Sending paper advance motor parameters...
+06/17/2004:10:50:30AM:00000039.031:INFOR:CommConnect,Opened Port 2,Settings 38400,n,8,1
+06/17/2004:10:50:31AM:00000039.032:INFOR:PrepareToPrintImage,Configuring,c:\DVP2_R3\DVP2_Printers\DVP2_0001\Images\DVP2_Gray.psd,Calibration,Advance=False
+06/17/2004:10:50:31AM:00000039.032:DEBUG:PrepareToPrintImage,Not making paper advance.
+06/17/2004:10:50:32AM:00000039.032:DEBUG:WaitForPaperMask,Timed,.4922 seconds.
+06/17/2004:10:50:32AM:00000039.033:DEBUG:ProcessImage,Loading & processing bitmap image.
+06/17/2004:10:50:32AM:00000039.033:DEBUG:ProcessImage,Combining bitmap images...
+06/17/2004:10:50:32AM:00000039.033:DEBUG:ProcessImage,Timed,.3263
+06/17/2004:10:50:33AM:00000039.033:DEBUG:CalculateExposures,Calculating red exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutr.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetr.frm
+06/17/2004:10:50:33AM:00000039.033:DEBUG:CalculateExposures,Calculating green exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutg.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetg.frm
+06/17/2004:10:50:33AM:00000039.033:DEBUG:CalculateExposures,Calculating blue exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutb.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetb.frm
+06/17/2004:10:50:33AM:00000039.033:DEBUG:CheckForInput,8x10 Lens Engaged,Timed,.0185
+06/17/2004:10:50:33AM:00000039.033:DEBUG:CheckForInput,LCD Rotated,Timed,.0011
+06/17/2004:10:50:33AM:00000039.033:DEBUG:PrepareToPrintImage,Timed,1.4616 seconds.
+06/17/2004:10:50:33AM:00000039.033:DEBUG:ClearImage,Outputting clear image to LCD
+06/17/2004:10:50:33AM:00000039.033:INFOR:PrintQue:Setup,configuring grid controls
+06/17/2004:10:50:33AM:00000039.033:INFOR:PrintQue:Setup,Starting Que Timer...
+06/17/2004:10:50:33AM:00000039.034:DEBUG:Form_Activate,Opened densitometer serial port on comm 3
+06/17/2004:11:06:22AM:00000039.982:INFOR:PrepareToPrintImage,Configuring,c:\DVP2_R3\DVP2_Printers\DVP2_0001\Images\DVP2_Gray.psd,Calibration,Advance=False
+06/17/2004:11:06:22AM:00000039.982:DEBUG:PrepareToPrintImage,Not making paper advance.
+06/17/2004:11:06:22AM:00000039.983:DEBUG:WaitForPaperMask,Timed,.2673 seconds.
+06/17/2004:11:06:22AM:00000039.983:DEBUG:ProcessImage,Loading & processing bitmap image.
+06/17/2004:11:06:22AM:00000039.983:DEBUG:ProcessImage,Combining bitmap images...
+06/17/2004:11:06:23AM:00000039.983:DEBUG:ProcessImage,Timed,.4664
+06/17/2004:11:06:23AM:00000039.983:DEBUG:CalculateExposures,Calculating red exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutr.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetr.frm
+06/17/2004:11:06:23AM:00000039.983:DEBUG:CalculateExposures,Calculating green exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutg.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetg.frm
+06/17/2004:11:06:23AM:00000039.984:DEBUG:CalculateExposures,Calculating blue exposure planes using LUT=c:\DVP2_R3\DVP2_Printers\DVP2_0001\LUT\lutb.lut Offset=c:\DVP2_R3\DVP2_Printers\DVP2_0001\Offset\offsetb.frm
+06/17/2004:11:06:23AM:00000039.984:DEBUG:CheckForInput,8x10 Lens Engaged,Timed,.0012
+06/17/2004:11:06:23AM:00000039.984:DEBUG:CheckForInput,LCD Rotated,Timed,.0011
+06/17/2004:11:06:23AM:00000039.984:DEBUG:PrepareToPrintImage,Timed,1.3589 seconds.
+06/17/2004:11:06:23AM:00000039.984:DEBUG:ClearImage,Outputting clear image to LCD
+06/17/2004:11:06:25AM:00000039.985:INFOR:CommDisconnect,Closed Backwriter port.
+06/17/2004:11:06:25AM:00000039.986:INFOR:CommDisconnect,Closed Index 0
+06/17/2004:11:06:26AM:00000039.987:INFOR:ErrorForm:Form_Unload,UnLoading Error Form...

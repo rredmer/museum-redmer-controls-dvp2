@@ -1,0 +1,29 @@
+10/16/2003:10:24:25AM:00000037.466:INFOR:Created log file (C:\DVP2_R2\QC Stations\QC_01\LogFiles\QC_LOG_10162003_102425.TXT)
+10/16/2003:10:24:25AM:00000037.466:INFOR:Main,Setting startup drive to C:
+10/16/2003:10:24:25AM:00000037.466:INFOR:Main,Setting INI file to C:\DVP2_R2\QC Stations\QC_01\DVP2_QC.ini
+10/16/2003:10:24:25AM:00000037.466:INFOR:Main,Setting Database Path to c:\DVP2_R2\Database\Settings.mdb
+10/16/2003:10:24:25AM:00000037.466:INFOR:Main,Setting Print Que Path to C:\DVP2_R2\PrintQue.mdb
+10/16/2003:10:24:25AM:00000037.466:INFOR:Main,Setting Printer Name to
+10/16/2003:10:24:25AM:00000037.466:INFOR:Main,Setting Settings Path to c:\DVP2_R2\DVP2 Printers\Default\
+10/16/2003:10:24:25AM:00000037.466:INFOR:Main,Setting Offset File Path to c:\DVP2_R2\DVP2 Printers\
+10/16/2003:10:24:25AM:00000037.466:INFOR:Main,Setting LUT File Path to c:\DVP2_R2\DVP2 Printers\
+10/16/2003:10:24:25AM:00000037.466:INFOR:OpenDatabase,Opening ADO Connection=Provider=Microsoft.Jet.OLEDB.4.0;Data Source=c:\DVP2_R2\Database\Settings.mdb;Persist Security Info=False
+10/16/2003:10:24:25AM:00000037.466:INFOR:OpenDatabase,Opening Printer List Recordset as SELECT * FROM PrinterList ORDER BY PrinterName
+10/16/2003:10:24:25AM:00000037.466:INFOR:OpenDatabase,Opening Printer Option Recordset as SELECT * FROM PrinterOptions WHERE PrinterName='DVP2_01' ORDER BY PrinterName,OptionNumber
+10/16/2003:10:24:25AM:00000037.466:INFOR:OpenDatabase,Opening Printer Settings Recordset as SELECT * FROM PrinterSettings WHERE PrinterName='DVP2_01' ORDER BY PrinterName,SettingNumber
+10/16/2003:10:24:25AM:00000037.466:INFOR:OpenDatabase,Opening Print Size Recordset as SELECT * FROM PrintSizes WHERE PrinterName='DVP2_01' ORDER BY PrinterName,PrintSize;
+10/16/2003:10:24:25AM:00000037.466:INFOR:OpenDatabase,Opening Exposure Time Recordset as SELECT * FROM ExposureTimes WHERE PrinterName='DVP2_01';
+10/16/2003:10:24:25AM:00000037.466:INFOR:OpenDatabase,Opening Exposure Time History Recordset as SELECT * FROM ExposureTimeHistory WHERE PrinterName='DVP2_01';
+10/16/2003:10:24:25AM:00000037.466:INFOR:OpenDatabase,Opening Hot Folder Recordset as SELECT * FROM HotFolders WHERE PrinterName='DVP2_01'
+10/16/2003:10:24:25AM:00000037.466:INFOR:OpenDatabase,Opening Output Recordset as SELECT * FROM DigitalOutputs WHERE PrinterName='DVP2_01' ORDER BY PrinterName,OutputNumber
+10/16/2003:10:24:25AM:00000037.466:INFOR:OpenDatabase,Opening Input Recordset as SELECT * FROM DigitalInputs WHERE PrinterName='DVP2_01' ORDER BY PrinterName,InputNumber
+10/16/2003:10:24:25AM:00000037.466:INFOR:OpenDatabase,Opening Printer Statistics Recordset as SELECT * FROM PrinterStatistics WHERE PrinterName='DVP2_01' ORDER BY PrinterName,StatisticNumber;
+10/16/2003:10:24:25AM:00000037.466:INFOR:OpenDatabase,Opening Daily Calibration Recordset as SELECT * FROM DailyCalibration WHERE PrinterName='DVP2_01' ORDER BY PrinterName,BlockNum;
+10/16/2003:10:24:25AM:00000037.466:INFOR:OpenDatabase,Opening Ring Around Recordset as SELECT * FROM RingArounds WHERE PrinterName='DVP2_01' ORDER BY PrinterName,BlockNum;
+10/16/2003:10:24:25AM:00000037.466:INFOR:OpenDatabase,Opening Ring Around Recordset as SELECT * FROM RingAroundsAutoScan WHERE PrinterName='DVP2_01' ORDER BY PrinterName,BlockNum;
+10/16/2003:10:24:25AM:00000037.466:INFOR:OpenDatabase,Opening Offset Calibration Recordset as SELECT * FROM OffsetCalibrations WHERE PrinterName='DVP2_01' ORDER BY PrinterName,OffsetNum
+10/16/2003:10:24:25AM:00000037.466:INFOR:OpenDatabase,Opening Lut Calibration Recordset as SELECT * FROM LutCalibrations WHERE PrinterName='DVP2_01' ORDER BY PrinterName,LutNum
+10/16/2003:10:24:25AM:00000037.466:INFOR:OpenDatabase,Opening Lead Tools Error Recordset as SELECT * FROM LeadErrorCodes
+10/16/2003:10:24:25AM:00000037.466:INFOR:OpenDatabase,Opening Lab Aim Recordset as SELECT * FROM LabAim
+10/16/2003:10:24:25AM:00000037.466:INFOR:OpenDatabase,Timed,.0662 seconds.
+10/16/2003:10:24:25AM:00000037.466:INFOR:OpenDatabase,Opening LUT Densitometer Values Recordset as SELECT * FROM LutDensitometerValues WHERE PrinterName='DVP2_01' AND LutNum=3 ORDER BY PrinterName,BlockNum;

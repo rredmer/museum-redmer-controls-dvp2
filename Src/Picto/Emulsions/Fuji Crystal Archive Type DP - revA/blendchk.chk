@@ -1,0 +1,6 @@
+#
+# convergence required for blend check calibration
+#  for Fuji type DP - revA
+#
+initial_limit=0.02
+final_limit=0.04

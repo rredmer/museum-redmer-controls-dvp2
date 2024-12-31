@@ -1,0 +1,15 @@
+#
+# convergence required for linearization
+#  for Fuji type DP - revA
+# initial value for shadows
+# final value for highlights
+#
+initial_limit=0.04
+final_limit=0.02
+exposure_limit=0.02
+exposure_patch=16
+dmax_exposure_limit=0.08
+dmax_exposure_patch=0
+dmax_delta_high_range=0.08
+dmax_delta_low_range=0.03
+

@@ -1,0 +1,36 @@
+6/16/04 Travel 9.5hrs
+	Ray Marin @ Duke, 30min Cell
+
+6/17/04	Luck, 8:30A-4:30P
+	Serial convertor dropping characters, moved densitometer to another PC.
+	Corrected severe bug in exiting program (lcd object hung on release).
+	Added code to print the Pictographics LUT image if Pictographics is enabled (QC Screen).
+	Added current LUT setting information to the QC screen.
+	Added current LUT setting information to the LUT screen.
+	Added ability to specify the reference LUT to use for the Picto calculation on the LUT Screen.
+	DVP2 Printer importing densitometer values needed to multiply by 100 for Muellersohn conversion.
+	DVP2 Printer importing densitometer values needed to remove white space from each line upon conversion.
+	Picto Import, densitometer not reading proper # of strips, reading delimiters as strips.
+	DVP2 Printer broken power cable to LCD prevented 8x10 printing
+	DVP2 Printer lamphouse settings unusually low (0,65,105), HOWEVER - Dmax has been achieved!
+	APS, 5:00P-8:00P
+	Initial LUT prints 25 points light on Green and Blue.
+	Created Picto LUT and printed samples, saw anomolies in gradient, especially in the highlights/gradient.
+	Cleared LUT and added exposure time, doubling Green & Blue to achieve target DMAX (within 4pts).
+	Picto Import, densitometer not reading proper # of strips, reading delimiters as strips. ** Same as Luck
+	
+6/18/04	Luck, 8:00A-
+	Printed several new picto LUT images (8x10 format to test reading).
+	Printed several original picto LUT images for manual reading (copied from original rev of DVP2).
+	Printed Fuji calibration image to check Muellersohn LUT performance - dmin/dmax, gradations.
+	* The Fuji calibration image looks good... dmax/dmin at mfg target, sharp focus.
+	Manually read picto LUT and calculated, printed more picto LUTs and ICC Target (ColorFlow/Gretag-MacBeth).
+	Received update from Gerry to remove erroneous data from the read - first two updates did not work - corrupted the data file.
+	DVP2 - modified the LUT import routine to parse out bad data based upon readings from densitometer (+/- 10-15 points of bad reads are thrown out).
+	Generated new LUT using auto readings along with DVP2 picto import - generated much smoother LUT than manual readings with 810!!
+	Read 2nd Picto LUT referencing first Picto LUT (#4), new lut is higher curve, less slope, more color seperation.
+	* Discovered Gerry's program does not store information in proper order - received new version that does.
+	Read in the original Picto lut using the new program, computed, ran new targets (12:35P).
+	Created ICC based on 2nd PIcto LUT and ran initial tests at 1:40PM.  Version 3.7.20.
+	
+	

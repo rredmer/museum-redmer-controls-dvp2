@@ -1,0 +1,9 @@
+04/26/2004:10:11:09AM:00000036.669:INFOR:Main,Setting startup drive to C:
+04/26/2004:10:11:09AM:00000036.669:INFOR:Main,Setting INI file to C:\DVP2_R3\Source\QC\DVP2_QC.ini
+04/26/2004:10:11:09AM:00000036.669:INFOR:Main,Setting Database Path to c:\DVP2_R2\Database\Settings.mdb
+04/26/2004:10:11:09AM:00000036.669:INFOR:Main,Setting Print Que Path to C:\DVP2_R2\PrintQue.mdb
+04/26/2004:10:11:09AM:00000036.669:INFOR:Main,Setting Printer Name to
+04/26/2004:10:11:09AM:00000036.669:INFOR:Main,Setting Settings Path to c:\DVP2_R2\DVP2 Printers\Default\
+04/26/2004:10:11:09AM:00000036.669:INFOR:Main,Setting Offset File Path to c:\DVP2_R2\DVP2 Printers\
+04/26/2004:10:11:09AM:00000036.669:INFOR:Main,Setting LUT File Path to c:\DVP2_R2\DVP2 Printers\
+04/26/2004:10:11:09AM:00000036.669:INFOR:ErrorForm:Form_Load,Loading Error Form...
